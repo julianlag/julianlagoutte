@@ -1,0 +1,9 @@
+Actuellement_en_ligne/
+Images_site/
+recherches/
+00_SITES_EXT/
+*.ai
+*.indd
+*.psd
+
+.DS_Store

@@ -1,0 +1,4888 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Julian Lagoutte — Design graphique & illustration</title>
+	<meta name="description"
+		content="Julian Lagoutte — design graphique, illustration, webdesign, identité visuelle, signalétique..." />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="favicon.png" />
+	<meta charset="UTF-8">
+	<link type="text/css" href="SCRIPT/style.css" rel="stylesheet">
+	<style type="text/css">
+	</style>
+	<script>
+	</script>
+</head>
+
+<body>
+
+	<!-- COLONNE -->
+
+	<div class="colonne" id="colonne">
+
+		<a href="https://www.julianlagoutte.fr/">
+			<div class="nom" id="nom">
+				<div id="julianLa">Julian La</div>
+				<div id="julianLagoutte">Julian Lagoutte</div>
+				<img id="goutte" src="IMAGES/goutte.svg">
+			</div>
+		</a>
+
+		<div class="entete">
+			<div class="liens">
+				<div id="liens1">
+					<span class="nomsProjets" id="aboutLink" onclick="switchProjetAbout();retour()">À PROPOS</span><br>
+					<span class="nomsProjets" id="contactLink"
+						onclick="switchProjetContact();retour()">CONTACT</span><br>
+				</div>
+				<div id="liens2">
+					<a class="nomsProjets" id="boutiqueLink"
+						onclick="clickBoutique();switchProjet('boutiqueLink', 'boutique');retour()">SHOP</a><br>
+					<a id="newsLink" href="https://www.instagram.com/julianlagoutte/" target="_blank">ACTUALITÉS</a>
+				</div>
+			</div>
+			<div class="enteteDroite">
+				<div class="langue" id="langue" onclick="langue();">FRA</div>
+				<div class="fullscreen" id="fullscreen" onclick="fullScreen();">
+					<img class="moulinFullscreen" src="IMAGES/fullscreen.png">
+				</div>
+			</div>
+		</div>
+
+		<div id="barreDeScroll">
+			<img id="goutteScroll" src="IMAGES/goutte.svg">
+		</div>
+
+		<div class="liste" id="liste" onscroll="scrollGoutte();">
+			<span class="annee">2024</span><br>
+			<span class="nomsProjets" id="magninLink"
+				onclick="clickMagnin();switchProjet('magninLink', 'magnin');retour()">Musée national Magnin</span><br>
+			<span class="nomsProjets" id="lyceeLink"
+				onclick="clickLycee();switchProjet('lyceeLink', 'lycee');retour()">Artistes plasticiens au
+				lycée</span><br>
+			<span class="nomsProjets" id="jeuxLink"
+				onclick="clickJeux();switchProjet('jeuxLink', 'jeux');retour()">Faites vos
+				jeux</span><br>
+			<br>
+			<span class="annee">2023</span><br>
+			<span class="nomsProjets" id="madeleineLink"
+				onclick="clickMadeleine();switchProjet('madeleineLink', 'madeleine');retour()">La
+				Madeleine</span><br>
+			<span class="nomsProjets" id="chienLink"
+				onclick="clickChien();switchProjet('chienLink', 'chien');retour()">Après-midi de chien</span><br>
+			<span class="nomsProjets" id="bourbonLink"
+				onclick="clickBourbon();switchProjet('bourbonLink', 'bourbon');retour()">Trois petits tours</span><br>
+			<!-- <span class="nomsProjets" id="flaurLink"
+				onclick="clickFlaur();switchProjet('flaurLink', 'flaur');retour()">FLAUR</span><br> -->
+			<span class="nomsProjets" id="batailleLink"
+				onclick="clickBataille();switchProjet('batailleLink', 'bataille');retour()">Bataille
+				risographique</span><br>
+			<br>
+			<span class="annee">2022</span><br>
+			<span class="nomsProjets" id="holdOnLink"
+				onclick="clickHoldOn();switchProjet('holdOnLink', 'holdOn');retour()">Hold
+				On</span><br>
+			<span class="nomsProjets" id="orageLink"
+				onclick="clickOrage();switchProjet('orageLink', 'orage');retour()">Y'a
+				de
+				l'orage</span><br>
+			<span class="nomsProjets" id="sunflowerLink"
+				onclick="clickSunflower();switchProjet('sunflowerLink', 'sunflower');retour()">Sunflower</span><br>
+			<span class="nomsProjets" id="astroLink"
+				onclick="clickAstro();switchProjet('astroLink', 'astro');retour()">Les
+				astronomes</span><br>
+			<br>
+			<span class="annee">2021</span><br>
+			<span class="nomsProjets" id="vapeurLink"
+				onclick="clickVapeur();switchProjet('vapeurLink', 'vapeur');retour()">La Vapeur</span><br>
+			<span class="nomsProjets" id="grandDejLink"
+				onclick="clickGrandDej() ;switchProjet('grandDejLink', 'grandDej');retour()">Le Grand
+				Dej'</span><br>
+			<span class="nomsProjets" id="trousLink"
+				onclick="clickTrous() ;switchProjet('trousLink', 'trous');retour()">Des
+				trous dans les
+				murs</span><br>
+			<span class="nomsProjets" id="voeuxLink"
+				onclick="clickVoeux();switchProjet('voeuxLink', 'voeux');retour()">Vœux
+				ÉSAD •GV</span><br>
+			<br>
+			<span class="annee">2020</span><br>
+			<span class="nomsProjets" id="discoLink"
+				onclick="clickDisco();switchProjet('discoLink', 'disco');retour()">Disco-graphiques</span><br>
+			<br>
+			<span class="annee">2019</span><br>
+			<span class="nomsProjets" id="tohuBohuLink"
+				onclick="clickTohuBohu();switchProjet('tohuBohuLink', 'tohuBohu');retour()">Tohu-bohu</span><br>
+			<span class="nomsProjets" id="voyeursLink"
+				onclick="clickVoyeurs();switchProjet('voyeursLink', 'voyeurs');retour()">Exemplaires
+				2019</span><br>
+			<span class="nomsProjets" id="memoireLink"
+				onclick="clickMemoire();switchProjet('memoireLink', 'memoire');retour()">L'aventure du
+				jeu</span><br><br>
+			<span class="annee">2018</span><br>
+			<span class="nomsProjets" id="jpoLink" onclick="clickJpo();switchProjet('jpoLink', 'jpo');retour()">Portes
+				ouvertes
+				ÉSAD •GV</span><br>
+			<span class="nomsProjets" id="limoLink"
+				onclick="clickLimo();switchProjet('limoLink', 'limo');retour()">Limo</span><br>
+			<br>
+			<span class="annee" id="enCours">En cours</span><br>
+			<span class="nomsProjets" id="disquesLink"
+				onclick="clickDisques();switchProjet('disquesLink', 'disques');retour()">Les
+				Disques Illustrés</span><br>
+			<a class="nomsProjets" href="https://goutte-a-goutte.tumblr.com/" target="_blank">Illustration et
+				impression</a><br><br>
+		</div>
+	</div>
+
+
+
+	<!-- A PROPOS -->
+
+	<div class="projet" id="about">
+
+		<div class="sectionBas" id="sectionBasAbout">
+			<div class="titre" id="titreAbout">À propos</div>
+			<div class="boutonGaucheMobile boutonMobileAbout"> <!-- MOBILE -->
+				<div class="fileDeConesMobile">
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle_mobile.png">
+						<div class="ovale ovaleAbout"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle_mobile.png">
+						<div class="ovale ovaleAbout"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle_mobile.png">
+						<div class="ovale ovaleAbout"></div>
+					</div>
+				</div>
+			</div>
+			<div class="boutonCentralMobile boutonMobileAbout" onclick="voletGauche()"> <!-- MOBILE -->
+				<div class="diagonale1"></div>
+				<div class="diagonale2"></div>
+			</div>
+			<div class="boutonDroitMobile boutonMobileAbout" onclick="switchProjetContact();"> <!-- MOBILE -->
+				<div class="fileDeConesMobile">
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle_mobile.png">
+						<div class="ovale ovaleAbout"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle_mobile.png">
+						<div class="ovale ovaleAbout"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle_mobile.png">
+						<div class="ovale ovaleAbout"></div>
+					</div>
+				</div>
+			</div>
+			<div class="categorie" id="categorieAbout">CRÉDITS</div>
+			<div class="anneeProjet" id="anneeAbout"></div>
+			<div id="credits1">Conception graphique et développement du site par Julian
+				Lagoutte.<br>Typographie&nbsp;: Hershey Noailles par Luuse.<br>Toutes les images de ce site ont
+				été prises par Julian
+				Lagoutte, excepté pour <i>Disco-graphiques</i> où les photographies, ainsi que la vidéo de présentation,
+				ont été
+				produites par le Centre Georges Pompidou.</div>
+			<div id="credits2"><u>Mentions légales</u><br>Toute reproduction, intégrale ou
+				partielle,
+				de ces images ou de quelconque élément de ce site est formellement interdite sans permission de
+				l'auteur.<br>Dernière mise à jour&nbsp;: février 2024.<br>© Julian Lagoutte 2018-2024</div>
+		</div>
+
+		<div id="imgAbout">
+			<div class="bio" id="bio"><span class="introAbout">Julian Lagoutte, designer graphique
+					et illustrateur
+					basé à
+					Dijon, diplômé de l'ÉSAD •Valence en 2019.</span><br><br>Je
+				crée des identités visuelles, des affiches, des éditions, des sites
+				internet et des illustrations. Je considère le graphisme et l'illustration comme complémentaires dans
+				mon
+				travail.<br><br>Ma connaissance des procédés
+				d'impression traditionnelle et artisanale me permet de proposer des projets réfléchis, en accord avec
+				leur contexte, et d'élaborer des objets singuliers et sensibles. Soucieux de la
+				dimension
+				pédagogique du graphisme, j'interviens également dans la conception et l'animation d'ateliers, ou dans
+				le
+				cadre de workshops.</div>
+
+			<div class="cv" id="cv1" onclick="texteSuivant()">
+				<div class="sousTitreAbout" id="sousTitreAbout1">PUBLICATIONS</div>
+				<p class="texteAbout" id="texteAbout1">• <i>Les astronomes</i>,
+					publication aux Éditions du Tache
+					Papier,
+					2022.<br><br>• Parution dans <i>Étapes:</i> n°252, «&nbsp;Écoles d'art et de design&nbsp;: 30
+					diplômes&nbsp;», Pyramid Éditions, 2019<br><br>• <i>Voyeurs</i>, publication collective de l'ÉSAD
+					•Valence
+					dans le cadre de la biennale «&nbsp;Exemplaires, formes et pratiques de l'édition
+					contemporaine&nbsp;»,
+					Rennes, 2019.<br><br>• Contribution au livre <i>Ficciones Typografika 1642</i> par Erik Brandt, Ben
+					DuVall
+					et
+					Paul Schmelzer, Formist Editions, 2019.</p>
+			</div>
+			<div class="cv" id="cv2" onclick="texteSuivant()">
+				<div class="sousTitreAbout" id="sousTitreAbout2">EXPOSITIONS & INTERVENTIONS</div>
+				<p class="texteAbout" id="texteAbout2">• Workshop
+					«&nbsp;Bataille risographique&nbsp;», École Média Art de
+					Chalon-sur-Saône, 2023.<br><br>• <i>Les astronomes</i>, exposition personnelle, Tache Papier, Dijon,
+					2022.<br><br>•
+					Workshop «&nbsp;histoireDeFormes&nbsp;», École Média Art de Chalon-sur-Saône, 2021.<br><br>•
+					<i>Popweb</i>, exposition collective sous la direction de Dominique Cunin, Lux Scène Nationale de
+					Valence,
+					2017.<br><br>• <i>Une cartographie de la recherche en design graphique</i>, Le Signe, Chaumont,
+					2017.
+				</p>
+			</div>
+			<div class="cv" id="cv3" onclick="texteSuivant()">
+				<div class="sousTitreAbout" id="sousTitreAbout3">INTERVIEWS</div>
+				<p class="texteAbout" id="texteAbout3">• <a class="link"
+						href="https://www.kiblind.com/articles/decryptage-nos-clips-animes-preferes-davril/"
+						target="_blank">Kiblind</a>, 2022.<br><br>• <a class="link" href="https://youtu.be/1o3sNlTkldQ"
+						target="_blank">Centre Georges Pompidou</a>, 2019.</p>
+			</div>
+			<div class="cv" id="cv4" onclick="texteSuivant()">
+				<div class="sousTitreAbout" id="sousTitreAbout4">PROJETS AUTO-INITIÉS</div>
+				<p class="texteAbout" id="texteAbout4"><a class="link" href="https://les-disques-illustres.fr/"
+						target="_blank">Les
+						Disques
+						Illustrés</a><br><br>Les Disques Illustrés est un projet d'édition qui s'inspire des
+					<i>volvelles</i>,
+					des disques en papier présents dans les livres d'astronomie du XVe siècle pour calculer et
+					représenter des
+					phénomènes cosmiques. Je reprend ces systèmes de rotation pour éditer des illustrations animées et
+					ludiques, seul ou en collaboration avec d'autres artistes.
+				</p>
+			</div>
+		</div>
+
+		<div class="sectionDroite" id="sectionDroiteAbout">
+			<div class="gifHaut gifAbout">
+				<div class="fileDeCones">
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleAbout"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleAbout"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleAbout"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleAbout"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleAbout"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleAbout"></div>
+					</div>
+				</div>
+			</div>
+			<div class="commanditaire" id="commanditaireAbout"></div>
+			<div class="ville" id="references">CLIENTS</div>
+			<div class="infosProjet" id="infosAbout">Les Ateliers Vortex<br>Atelier White Cubi<br>Centre
+				Pompidou<br>Collectif Portail<br>La Croix Rouge<br>EMA Chalon-sur-Saône<br>L'Équipée<br>ÉSAD •Grenoble
+				•Valence<br>La Madeleine, scène conventionnée de Troyes<br>La Maison-Phare<br>Tache Papier<br>La
+				Vapeur<br>Youz Prod</div>
+			<div class="gifBas gifAbout" onclick="switchProjetContact();">
+				<div class="fileDeCones">
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleAbout"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleAbout"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleAbout"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleAbout"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleAbout"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleAbout"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="cv" class="sectionAboutMobile">
+			<div class="sousTitreAbout">CLIENTS</div>
+			<p class="texteAbout">Les Ateliers
+				Vortex<br>Atelier White Cubi<br>Centre Pompidou<br>Collectif Portail<br>La Croix Rouge<br>EMA
+				Chalon-sur-Saône<br>L'Équipée<br>ÉSAD •Grenoble
+				•Valence<br>La Madeleine, scène conventionnée de Troyes<br>La Maison-Phare<br>Tache Papier - Print Club
+				Dijon<br>La Vapeur<br>Youz Prod</p>
+		</div>
+		<div class="cv" class="sectionAboutMobile">
+			<div class="sousTitreAbout" id="titreCreditsMobile">CRÉDITS</div>
+			<div class="texteAbout" id="creditsMobile">Conception graphique et développement du site par Julian
+				Lagoutte.<br>Typographie&nbsp;: Hershey Noailles par Luuse.<br><br>Toutes les images de ce site ont
+				été prises par Julian
+				Lagoutte, excepté pour <i>Disco-graphiques</i> où les photographies, ainsi que la vidéo de présentation,
+				ont été
+				produites par le Centre Georges Pompidou.<br><br>Mentions légales</u><br><br>Toute reproduction,
+				intégrale ou
+				partielle,
+				de ces images ou de quelconque élément de ce site est formellement interdite sans permission de
+				l'auteur.<br>Dernière mise à jour&nbsp;: février 2024.<br>© Julian Lagoutte 2018-2024</div>
+		</div>
+
+	</div>
+
+
+	<!-- CONTACT -->
+
+	<div class="projet" id="contact">
+
+		<div class="sectionImage" id="sectionImageContact">
+			<img class="imgProjet" id="imgContact" src="IMAGES/PROJETS/AUTRES/julian.jpg">
+			<div id="sectionContactMobile">
+				<div class="adresse" id="adresseMobile">N'hésitez pas à me contacter pour votre
+					projet ou pour me proposer de collaborer&nbsp;:<br><br><a
+						href="mailto:bonjour@julianlagoutte.fr">bonjour@julianlagoutte.fr</a><br>06.69.25.21.53<br>44
+					rue des
+					Forges, Dijon, FR</div>
+				<div class="adresse sousTitreContact" id="suivezMobile">SUIVEZ-MOI AUSSI SUR</div>
+				<div class="adresse"><a href="https://www.instagram.com/julianlagoutte/"
+						target="_blank">Instagram</a><br><a href="https://www.facebook.com/lagoutteJulian"
+						target="_blank">Facebook</a><br><a href="https://www.behance.net/julianlagoutte"
+						target="_blank">Behance</a><br><a href="https://goutte-a-goutte.tumblr.com/"
+						target="_blank">Tumblr</a><br><a href="https://vimeo.com/user73764747" target="_blank">Vimeo</a>
+				</div>
+
+			</div>
+		</div>
+
+		<div class="sectionBas" id="sectionBasContact">
+			<div class="titre" id="titreContact">Contact</div>
+			<div class="boutonGaucheMobile boutonMobileContact" onclick="switchProjetAbout();"> <!-- MOBILE -->
+				<div class="fileDeConesMobile">
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle_mobile.png">
+						<div class="ovale ovaleContact"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle_mobile.png">
+						<div class="ovale ovaleContact"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle_mobile.png">
+						<div class="ovale ovaleContact"></div>
+					</div>
+				</div>
+			</div>
+			<div class="boutonCentralMobile boutonMobileContact" onclick="voletGauche()"> <!-- MOBILE -->
+				<div class="diagonale1"></div>
+				<div class="diagonale2"></div>
+			</div>
+			<div class="boutonDroitMobile boutonMobileContact"
+				onclick="clickBoutique();switchProjet('boutiqueLink', 'boutique');"> <!-- MOBILE -->
+				<div class="fileDeConesMobile">
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle_mobile.png">
+						<div class="ovale ovaleContact"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle_mobile.png">
+						<div class="ovale ovaleContact"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle_mobile.png">
+						<div class="ovale ovaleContact"></div>
+					</div>
+				</div>
+			</div>
+			<div class="categorie" id="categorieContact">ADRESSES</div>
+			<div class="anneeProjet" id="anneeContact"></div>
+			<div id="adresses1">N'hésitez pas à me contacter pour votre projet ou pour me proposer de
+				collaborer&nbsp;:</div>
+			<div id="adresses2"><a
+					href="mailto:bonjour@julianlagoutte.fr">bonjour@julianlagoutte.fr</a><br>06.69.25.21.53<br>44 rue
+				des Forges, Dijon, FR</div>
+		</div>
+
+		<div class="sectionDroite" id="sectionDroiteContact">
+			<div class="gifHaut gifContact" onclick="switchProjetAbout();">
+				<div class="fileDeCones">
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleContact"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleContact"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleContact"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleContact"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleContact"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleContact"></div>
+					</div>
+				</div>
+			</div>
+			<div class="commanditaire" id="suivez">SUIVEZ-MOI</div>
+			<div class="ville" id="aussi">AUSSI SUR</div>
+			<div class="infosProjet" id="infosContact"><a href="https://www.instagram.com/julianlagoutte/"
+					target="_blank">Instagram</a><br><a href="https://www.facebook.com/lagoutteJulian"
+					target="_blank">Facebook</a><br><a href="https://www.behance.net/julianlagoutte"
+					target="_blank">Behance</a><br><a href="https://goutte-a-goutte.tumblr.com/"
+					target="_blank">Tumblr</a><br><a href="https://vimeo.com/user73764747" target="_blank">Vimeo</a>
+			</div>
+			<div class="gifBas gifContact" onclick="clickBoutique();switchProjet('boutiqueLink', 'boutique');">
+				<div class="fileDeCones">
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleContact"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleContact"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleContact"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleContact"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleContact"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleContact"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+	</div>
+
+
+	<!-- BOUTIQUE -->
+
+	<div class="projet" id="boutique">
+
+		<div class="sectionImage" id="imgBoutique" onclick="texteBoutique();">
+			<div id="categorieBoutiqueMobile">Pour faire une commande, envoyez un message avec les
+				titres et
+				les quantités souhaités
+				à <a class="link" href="mailto:bonjour@julianlagoutte.fr">bonjour@julianlagoutte.fr</a></div>
+			<!-- MOBILE -->
+			<div id="anneeBoutiqueMobile">Envoi à l'international<br>Paiement via Paypal</div> <!-- MOBILE -->
+			<div id="textesBoutiqueMobile"> <!-- MOBILE -->
+				<div class="texteBoutiqueMobile" id="texteTrous">
+					<div class="sousTitreAbout">TROUS — 15€</div>
+					<p class="texteAbout">Risographie A4,
+						4 couleurs, sur papier Munken Rough
+						240gr.<br>Limité à 30 exemplaires numérotés et signés.</p>
+				</div>
+				<div class="texteBoutiqueMobile" id="texteComete">
+					<div class="sousTitreAbout">L'ARRIVÉE DE LA COMÈTE — 9€</div>
+					<p class="texteAbout">Risographie A5,
+						4 couleurs, sur papier Munken Rough
+						240gr.<br>Limité à 30 exemplaires numérotés et signés.</p>
+				</div>
+				<div class="texteBoutiqueMobile" id="texteNoeuds">
+					<div class="sousTitreAbout">SAC DE NOEUDS — 9€</div>
+					<p class="texteAbout">Risographie A5,
+						2 couleurs, sur papier Munken Rough
+						240gr.<br>Limité à 30 exemplaires numérotés et signés.</p>
+				</div>
+				<div class="texteBoutiqueMobile" id="texteMinigolfDamier">
+					<div class="sousTitreAbout">MINIGOLF DAMIER — 15€</div>
+					<p class="texteAbout">Risographie A4,
+						3 couleurs, sur papier Munken Rough
+						240gr.<br>Limité à 20 exemplaires numérotés et signés.</p>
+				</div>
+				<div class="texteBoutiqueMobile" id="texteMinigolfSpherique">
+					<div class="sousTitreAbout">MINIGOLF SPHÉRIQUE — 12€</div>
+					<p class="texteAbout">Risographie 21&nbsp;×&nbsp;21 cm,
+						3 couleurs, sur papier Munken Rough
+						240gr.<br>Limité à 20 exemplaires numérotés et signés.</p>
+				</div>
+				<div class="texteBoutiqueMobile" id="texteMinigolfSpirale">
+					<div class="sousTitreAbout">MINIGOLF SPIRALE — 5€</div>
+					<p class="texteAbout">Risographie format marque-page (8,7&nbsp;×&nbsp;21 cm),
+						3 couleurs, sur papier Munken Rough
+						240gr.<br>Limité à 20 exemplaires numérotés et signés.</p>
+				</div>
+				<div class="texteBoutiqueMobile" id="texteCometeZigzagante">
+					<div class="sousTitreAbout">COMÈTE ZIGZAGANTE — 25€</div>
+					<p class="texteAbout">Risographie A3,
+						3 couleurs, sur papier Munken Polar
+						240gr.<br>Limité à 10 exemplaires numérotés et signés.</p>
+				</div>
+				<div class="texteBoutiqueMobile" id="texteLevitation">
+					<div class="sousTitreAbout">LÉVITATION — 18€</div>
+					<p class="texteAbout">Risographie
+						29,7&nbsp;×&nbsp;29,7 cm,
+						2 couleurs, sur papier Munken Polar
+						240gr.<br>Limité à 15 exemplaires numérotés et signés.</p>
+				</div>
+				<div class="texteBoutiqueMobile" id="texteMaison">
+					<div class="sousTitreAbout">LA MAISON SUR LE NUAGE — 4€</div>
+					<p class="texteAbout">Carte postale risographiée,
+						3 couleurs, sur papier Munken Polar
+						240gr.<br>Limité à 16 exemplaires numérotés et signés.</p>
+				</div>
+				<div class="texteBoutiqueMobile" id="texteMinigolfHabite">
+					<div class="sousTitreAbout">MINIGOLF HABITÉ — 9€</div>
+					<p class="texteAbout">Risographie A5,
+						3 couleurs, sur papier Munken Polar
+						240gr.<br>Limité à 10 exemplaires numérotés et signés.</p>
+				</div>
+				<div class="texteBoutiqueMobile" id="texteMinigolfCone">
+					<div class="sousTitreAbout">MINIGOLF CÔNE — 4€</div>
+					<p class="texteAbout">Carte postale risographiée,
+						3 couleurs, sur papier Munken Polar
+						240gr.<br>Limité à 10 exemplaires numérotés et signés.</p>
+				</div>
+				<div class="texteBoutiqueMobile" id="texteDessusDessous">
+					<div class="sousTitreAbout">SANS DESSUS DESSOUS — 9€</div>
+					<p class="texteAbout">Risographie
+						A5,
+						2 couleurs, sur papier Munken Pure
+						240gr.<br>Limité à 15 exemplaires numérotés et signés.</p>
+				</div>
+				<div class="texteBoutiqueMobile" id="texteMontagnes">
+					<div class="sousTitreAbout">MONTAGNE ÉNERVÉE — 25€</div>
+					<p class="texteAbout">Risographie A3, 4
+						couleurs, sur papier Munken Rough Pure 240gr.<br>Limité à 20 exemplaires numérotés et
+						signés. Illustration 1/2 d'une collaboration avec Félix Pommier.</p>
+				</div>
+				<div class="texteBoutiqueMobile" id="texteFemme">
+					<div class="sousTitreAbout">HORIZON GALBÉ — 25€</div>
+					<p class="texteAbout">Risographie A3, 4
+						couleurs, sur papier Munken Rough Pure 240gr.<br>Limité à 20 exemplaires numérotés et
+						signés. Illustration 2/2 d'une collaboration avec Félix Pommier.</p>
+				</div>
+				<div class="texteBoutiqueMobile" id="texteAstronomes">
+					<div class="sousTitreAbout">LES ASTRONOMES — 15€</div>
+					<p class="texteAbout">Bande dessinée
+						rotative, Les Éditions du Tache Papier, mars 2022.<br>Risographie 1 couleur sur papier Munken
+						Polar
+						240gr. Autocollant de la pochette imprimé en sérigraphie.<br>Seconde édition (septembre
+						2023), 60
+						exemplaires numérotés.</p>
+				</div>
+				<div class="texteBoutiqueMobile" id="texteAscension">
+					<div class="sousTitreAbout">ASCENSION GLISSANTE — 25€</div>
+					<p class="texteAbout">Risographie
+						A3,
+						2 couleurs, sur papier Fedrigoni Arena
+						200gr.<br>Limité à 15 exemplaires numérotés et signés.</p>
+				</div>
+				<div class="texteBoutiqueMobile" id="texteColline">
+					<div class="sousTitreAbout">COLLINE — 15€</div>
+					<p class="texteAbout">Risographie A4,
+						3 couleurs, sur papier Munken Cream
+						240gr.<br>Limité à 13 exemplaires numérotés et signés.</p>
+				</div>
+				<div class="texteBoutiqueMobile" id="texteChute">
+					<div class="sousTitreAbout">LA CHUTE — 9€</div>
+					<p class="texteAbout">Risographie A5,
+						1 couleur, sur papier Munken Cream
+						240gr.<br>Limité à 15 exemplaires numérotés et signés.</p>
+				</div>
+			</div>
+		</div>
+		<div class="boutonsSlider">
+			<div class="precedente" onclick="articlePrecedent('premiereImageBoutique')"></div>
+			<div class="suivante" onclick="articleSuivant('premiereImageBoutique', -1700)"></div>
+		</div>
+
+		<div class="sectionBas" id="sectionBasBoutique">
+			<div class="titre" id="titreBoutique">Trous</div>
+			<div class="titre" id="titreBoutiqueMobile">Shop</div> <!-- MOBILE -->
+			<div class="boutonGaucheMobile boutonMobileBoutique" onclick="switchProjetContact();"> <!-- MOBILE -->
+				<div class="fileDeConesMobile">
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle_mobile.png">
+						<div class="ovale ovaleBoutique"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle_mobile.png">
+						<div class="ovale ovaleBoutique"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle_mobile.png">
+						<div class="ovale ovaleBoutique"></div>
+					</div>
+				</div>
+			</div>
+			<div class="boutonCentralMobile" onclick="voletGauche()"> <!-- MOBILE -->
+				<div class="diagonale1"></div>
+				<div class="diagonale2"></div>
+			</div>
+			<div class="boutonDroitMobile boutonMobileBoutique" onclick="clickJeux();switchProjet('jeuxLink', 'jeux');">
+				<!-- MOBILE -->
+				<div class="fileDeConesMobile">
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle_mobile.png">
+						<div class="ovale ovaleBoutique"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle_mobile.png">
+						<div class="ovale ovaleBoutique"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle_mobile.png">
+						<div class="ovale ovaleBoutique"></div>
+					</div>
+				</div>
+			</div>
+			<div class="categorie" id="categorieBoutique">RISOGRAPHIE</div>
+			<div class="anneeProjet" id="anneeBoutique">15&nbsp;€</div>
+			<div class="texteProjet" id="texteBoutique">Risographie A4, 4 couleurs, sur papier Munken Rough
+				240gr.<br>Limité à 30 exemplaires numérotés et signés.</div>
+			<div class="texteProjet" id="texteBoutiqueAnglais">A4 risograph print, 4 colours, on 240g Munken Rough
+				paper.<br>Limited edition of 30 signed and numbered copies.</div>
+			<div class="caseMoulin">
+				<img class="moulin" src="IMAGES/moulin.png"></img>
+			</div>
+		</div>
+
+		<div class="sectionDroite" id="sectionDroiteBoutique">
+			<div class="gifHaut gifBoutique" onclick="switchProjetContact();">
+				<div class="fileDeCones">
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleBoutique"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleBoutique"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleBoutique"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleBoutique"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleBoutique"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleBoutique"></div>
+					</div>
+				</div>
+			</div>
+			<div class="commanditaire" id="dimensions">21&nbsp;×&nbsp;29,7 CM</div>
+			<div class="ville" id="couleurs">4 COULEURS</div>
+			<div class="ville" id="couleursAnglais">4 COLOURS</div>
+			<div class="infosProjet" id="infosBoutique">Pour faire une commande, envoyez un message avec les titres et
+				les quantités souhaités
+				à <a class="link" href="mailto:julian.lagoutte@gmail.com">julian.lagoutte@gmail.com</a><br><br>Envoi à
+				l'international<br>Paiement via Paypal
+			</div>
+			<div class="gifBas gifBoutique" onclick="clickJeux();switchProjet('jeuxLink', 'jeux');">
+				<div class="fileDeCones">
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleBoutique"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleBoutique"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleBoutique"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleBoutique"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleBoutique"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleBoutique"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<!-- INTRO -->
+
+	<div id="ecranIntro">
+
+		<img id="goutteIntro" src="IMAGES/goutte.svg">
+
+		<div class="colonne" id="colonneIntro">
+
+			<div class="nom caseIntro" id="nomIntro">
+				<div id="julianLa">Julian Lagoutte</div>
+			</div>
+
+			<div class="entete caseIntro" id="enteteIntro">
+				<div class="liens" id="liensIntro"></div>
+				<div class="enteteDroite">
+					<div class="langue"></div>
+					<div class="fullscreen">
+					</div>
+				</div>
+			</div>
+
+			<div class="liste caseIntro" id="listeIntro"></div>
+		</div>
+
+		<div id="intro">
+
+			<div class="sectionImage caseIntro" id="imgIntro"></div>
+
+			<div class="sectionBas" id="sectionBasIntro">
+				<div class="titre caseIntro" id="titreIntro">Design graphique</div>
+				<div class="boutonGaucheMobile" onclick="voletGauche()"></div> <!-- MOBILE -->
+				<div class="boutonCentralMobile" onclick="voletGauche()"></div> <!-- MOBILE -->
+				<div class="boutonDroitMobile" onclick="voletDroit()"></div> <!-- MOBILE -->
+				<div class="categorie caseIntro" id="categorieIntro"></div>
+				<div class="anneeProjet caseIntro" id="anneeIntro"></div>
+				<div class="texteProjet caseIntro" id="texteIntro"></div>
+				<div class="caseMoulin caseIntro" id="moulinIntro"></div>
+			</div>
+
+			<div class="sectionDroite" id="sectionDroiteIntro">
+				<div class="gifHaut gifIntro caseIntro" id="gifHautIntro">
+				</div>
+				<div class="commanditaire caseIntro" id="illustration">& illustration</div>
+				<div class="ville caseIntro"></div>
+				<div class="infosProjet caseIntro" id="infosIntro">
+				</div>
+				<div class="gifBas gifIntro caseIntro" id="gifBasIntro">
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+
+
+	<!-- INTRO MOBILE -->
+
+	<div class="projet" id="introMobile" onclick="voletGauche();">
+
+		<img id="goutteIntroMobile" src="IMAGES/goutte.svg">
+
+		<div class="sectionImage" id="imgIntroMobile">
+			<div id="imageIntroMobile1">
+				<img class="imgAccueil" id="imgAccueilMobile1" src="IMAGES/PROJETS/DISQUES_ILLUSTRES/02.jpg">
+			</div>
+			<div id="imageIntroMobile2">
+				<img class="imgAccueil" id="imgAccueilMobile2" src="IMAGES/PROJETS/VOEUX/02.jpg">
+			</div>
+			<img id="moulinMobile" src="IMAGES/moulin.png">
+			<div id="imageIntroMobile3">
+				<img class="imgAccueil" id="imgAccueilMobile3" src="IMAGES/PROJETS/VAPEUR/01.jpg">
+			</div>
+		</div>
+
+		<div class="sectionBas" id="sectionBasIntro">
+			<div class="titre">Julian Lagoutte</div>
+			<div class="boutonGaucheIntro" onclick="voletGauche()">DESIGN</div> <!-- MOBILE -->
+			<div class="boutonCentralMobile" onclick="voletGauche()"></div> <!-- MOBILE -->
+			<div class="boutonDroitIntro" onclick="voletDroit()">GRAPHIQUE</div> <!-- MOBILE -->
+			<div class="categorie">& ILLUSTRATION</div>
+			<div class="boutonInfos" id="boutonInfosIntro">
+				<img class="moulinFullscreen" id="petitMoulinMobile" src="IMAGES/fullscreen.png">
+			</div>
+		</div>
+
+	</div>
+
+
+	<!-- ACCUEIL -->
+
+	<div class="projet" id="accueil">
+
+		<div class="sectionImage" id="imgAccueil">
+			<img class="imgAccueil" id="imgAccueil10" src="IMAGES/PROJETS/ASTRONOMES/00.jpg">
+			<img class="imgAccueil" id="imgAccueil9" src="IMAGES/PROJETS/VAPEUR/01.jpg"
+				onmouseenter="imageSwitch('imgAccueil9')">
+		</div>
+
+		<div class="sectionBas" id="sectionBasAccueil">
+			<div class="titre" id="titreAccueil">Design graphique</div>
+			<div class="boutonGaucheMobile" onclick="voletGauche()"></div> <!-- MOBILE -->
+			<div class="boutonCentralMobile" onclick="voletGauche()"></div> <!-- MOBILE -->
+			<div class="boutonDroitMobile" onclick="voletDroit()"></div> <!-- MOBILE -->
+			<div class="categorie" id="categorieAccueil"></div>
+			<div class="anneeProjet" id="anneeAccueil"></div>
+			<div class="texteProjet" id="texteAccueil">
+				<img class="imgAccueil" id="imgAccueil1" src="IMAGES/PROJETS/DISQUES_ILLUSTRES/02_intro.jpg">
+				<img class="imgAccueil" id="imgAccueil2" src="IMAGES/PROJETS/BOURBON/01_intro.jpg"
+					onmouseenter="imageSwitch('imgAccueil2')">
+			</div>
+			<div class="caseMoulin">
+				<img class="moulin" src="IMAGES/moulin.png"></img>
+			</div>
+		</div>
+
+		<div class="sectionDroite" id="sectionDroiteAccueil">
+			<div class="gifHaut gifAccueil">
+				<div class="fileDeCones">
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleAccueil"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleAccueil"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleAccueil"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleAccueil"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleAccueil"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleAccueil"></div>
+					</div>
+				</div>
+				<img class="imgAccueil" id="imgAccueil4" src="IMAGES/PROJETS/ORAGE/04_intro.jpg">
+				<img class="imgAccueil" id="imgAccueil3" src="IMAGES/PROJETS/SUNFLOWER/01.jpg"
+					onmouseenter="imageSwitch('imgAccueil3')">
+			</div>
+			<div class="commanditaire" id="illustration">& illustration</div>
+			<div class="ville"></div>
+			<div class="infosProjet" id="infosAccueil">
+				<img class="imgAccueil" id="imgAccueil6" src="IMAGES/PROJETS/JEUX/06_intro.jpg">
+				<img class="imgAccueil" id="imgAccueil5" src="IMAGES/PROJETS/DISCO/01_intro.jpg"
+					onmouseenter="imageSwitch('imgAccueil5')">
+			</div>
+			<div class="gifBas gifAccueil">
+				<div class="fileDeCones">
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleAccueil"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleAccueil"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleAccueil"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleAccueil"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleAccueil"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleAccueil"></div>
+					</div>
+				</div>
+				<img class="imgAccueil imgAccueilDroite" id="imgAccueil8" src="IMAGES/PROJETS/JPO/12_intro.jpg">
+				<img class="imgAccueil imgAccueilDroite" id="imgAccueil7" src="IMAGES/PROJETS/VOEUX/02_intro.jpg"
+					onmouseenter="imageSwitch('imgAccueil7')">
+			</div>
+		</div>
+
+	</div>
+
+
+
+	<!-- MUSEE MAGNIN -->
+
+	<div class="projet" id="magnin">
+
+		<div class="sectionImage" id="imgMagnin"></div>
+		<div class="boutonsSlider">
+			<div class="precedente" onclick="imagePrecedente('premiereImageMagnin')"></div>
+			<div class="suivante" onclick="imageSuivante('premiereImageMagnin', -400)"></div>
+		</div>
+
+		<div class="sectionBas">
+			<div class="titre" id="titreMagnin">Musée national Magnin</div>
+			<div class="boutonGaucheMobile boutonMobileMagnin"
+				onclick="clickBoutique();switchProjet('boutiqueLink', 'boutique');"> <!-- MOBILE -->
+				<div class="fileDeConesMobile">
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle_mobile.png">
+						<div class="ovale ovaleMagnin"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle_mobile.png">
+						<div class="ovale ovaleMagnin"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle_mobile.png">
+						<div class="ovale ovaleMagnin"></div>
+					</div>
+				</div>
+			</div>
+			<div class="boutonCentralMobile boutonCentralMobileMagnin" onclick="voletGauche()"> <!-- MOBILE -->
+				<div class="diagonale1"></div>
+				<div class="diagonale2"></div>
+			</div>
+			<div class="boutonDroitMobile boutonMobileMagnin"
+				onclick="clickLycee();switchProjet('lyceeLink', 'lycee');">
+				<!-- MOBILE -->
+				<div class="fileDeConesMobile">
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle_mobile.png">
+						<div class="ovale ovaleMagnin"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle_mobile.png">
+						<div class="ovale ovaleMagnin"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle_mobile.png">
+						<div class="ovale ovaleMagnin"></div>
+					</div>
+				</div>
+			</div>
+			<div class="categorie" id="categorieMagnin">AFFICHE</div>
+			<div class="anneeProjet" id="anneeMagnin">2024</div>
+			<div class="texteProjet" id="texteMagnin">Conception de l'affiche annonçant la gratuité du Musée national
+				Magnin. Afin d'inciter un public plus jeune et plus familial à aller découvrir cet hôtel particulier et
+				ses tableaux,
+				l'affiche se voulait conviviale et colorée, et montre une image idéalisée de la cour intérieure du
+				musée,
+				en mélangeant photographie, peinture et typographie manuscrite. Elle est diffusée sur plusieurs mois à
+				Dijon et en Bourgogne-Franche-Comté sur de multiples supports,
+				tel que flyers, affiches en grand format et magazines.</div>
+			<div class="caseMoulin">
+				<img class="moulin" src="IMAGES/moulin.png"></img>
+			</div>
+			<div class="boutonInfos" onclick="voletDroit()">INFOS</div> <!-- MOBILE -->
+		</div>
+
+		<div class="sectionDroite" id="sectionDroiteMagnin">
+			<div class="gifHaut gifMagnin" onclick="clickBoutique();switchProjet('boutiqueLink', 'boutique');">
+				<div class="fileDeCones">
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleMagnin"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleMagnin"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleMagnin"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleMagnin"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleMagnin"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleMagnin"></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="retour" onclick="retour();">RETOUR</div>
+			<div class="categorieMobile">AFFICHE</div>
+			<div class="commanditaire">MUSÉE NATIONAL MAGNIN</div>
+			<div class="ville">DIJON</div>
+			<div class="anneeMobile">2024</div>
+			<div class="texteProjetMobile" id="texteMobileMagnin">Conception de l'affiche annonçant la gratuité du Musée
+				national
+				Magnin. Afin d'inciter un public plus jeune et plus familial à aller découvrir cet hôtel particulier et
+				ses tableaux,
+				l'affiche se voulait conviviale et colorée, et montre une image idéalisée de la cour intérieure du
+				musée,
+				en mélangeant photographie, peinture et typographie manuscrite. Elle est diffusée sur plusieurs mois à
+				Dijon et en Bourgogne-Franche-Comté sur de multiples supports,
+				tel que flyers, affiches en grand format et magazines.</div> <!-- MOBILE -->
+			<div class="infosProjet" id="infosMagnin">Affiches 1200&nbsp;×&nbsp;1750&nbsp;mm<br>Affiche
+				590&nbsp;×&nbsp;790&nbsp;mm<br>Affiches A3<br>Flyers A5</div>
+			<div class="gifBas gifMagnin" onclick="clickLycee();switchProjet('lyceeLink', 'lycee');">
+				<div class="fileDeCones">
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleMagnin"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleMagnin"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleMagnin"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleMagnin"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleMagnin"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleMagnin"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+
+	<!-- ARTISTES PLASTICIENS AU LYCÉE -->
+
+	<div class="projet" id="lycee">
+
+		<div class="sectionImage" id="imgLycee"></div>
+		<div class="boutonsSlider">
+			<div class="precedente" onclick="imagePrecedente('premiereImageLycee')"></div>
+			<div class="suivante" onclick="imageSuivante('premiereImageLycee', -2000)"></div>
+		</div>
+
+		<div class="sectionBas">
+			<div class="titre" id="titreLycee">Artistes plasticiens au lycée</div>
+			<div class="boutonGaucheMobile boutonMobileLycee"
+				onclick="clickMagnin();switchProjet('magninLink', 'magnin');"> <!-- MOBILE -->
+				<div class="fileDeConesMobile">
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle_mobile.png">
+						<div class="ovale ovaleLycee"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle_mobile.png">
+						<div class="ovale ovaleLycee"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle_mobile.png">
+						<div class="ovale ovaleLycee"></div>
+					</div>
+				</div>
+			</div>
+			<div class="boutonCentralMobile boutonCentralMobileLycee" onclick="voletGauche()"> <!-- MOBILE -->
+				<div class="diagonale1"></div>
+				<div class="diagonale2"></div>
+			</div>
+			<div class="boutonDroitMobile boutonMobileLycee" onclick="clickJeux();switchProjet('jeuxLink', 'jeux');">
+				<!-- MOBILE -->
+				<div class="fileDeConesMobile">
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle_mobile.png">
+						<div class="ovale ovaleLycee"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle_mobile.png">
+						<div class="ovale ovaleLycee"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle_mobile.png">
+						<div class="ovale ovaleLycee"></div>
+					</div>
+				</div>
+			</div>
+			<div class="categorie" id="categorieLycee">RÉSIDENCE</div>
+			<div class="anneeProjet" id="anneeLycee">2024</div>
+			<div class="texteProjet" id="texteLycee">Résidence au lycée Carnot à Dijon, dans le cadre du dispositif
+				«&nbsp;Artistes
+				plasticiens au lycée&nbsp;», initié par la Région Bourgogne-Franche-Comté.
+				Nous avons
+				fabriqué, avec un
+				groupe de lycéens, une installation mobile prenant la forme d'une carte du ciel à grande échelle,
+				qui a été installée dans l'établissement pour être manipulée par ses usagers. Les élèves ont
+				imaginé des formes rappelant des planètes et autres corps célèstes à l'aide de différentes techniques de
+				dessin, puis chaque pièce a été peinte, sérigraphiée puis assemblée pour construire
+				cette table d'orientation planétaire.</div>
+			<div class="caseMoulin">
+				<img class="moulin" src="IMAGES/moulin.png"></img>
+			</div>
+			<div class="boutonInfos" onclick="voletDroit()">INFOS</div> <!-- MOBILE -->
+		</div>
+
+		<div class="sectionDroite" id="sectionDroiteLycee">
+			<div class="gifHaut gifLycee" onclick="clickMagnin();switchProjet('magninLink', 'magnin');">
+				<div class="fileDeCones">
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleLycee"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleLycee"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleLycee"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleLycee"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleLycee"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleLycee"></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="retour" onclick="retour();">RETOUR</div>
+			<div class="categorieMobile">RÉSIDENCE</div>
+			<div class="commanditaire">LA RÉGION BFC</div>
+			<div class="ville">DIJON</div>
+			<div class="anneeMobile">2024</div>
+			<div class="texteProjetMobile" id="texteMobileLycee">Résidence au lycée Carnot à Dijon, dans le cadre
+				du dispositif «&nbsp;Artistes plasticiens au lycée&nbsp;», initié par la Région
+				Bourgogne-Franche-Comté.
+				Nous avons
+				fabriqué, avec un
+				groupe de lycéens, une installation mobile prenant la forme d'une carte du ciel à grande échelle,
+				qui a été installée dans l'établissement pour être manipulé par ses usagers. Les élèves ont
+				imaginé des formes rappelant des planètes et autres corps célèstes à l'aide de différentes techniques de
+				dessin, puis chaque pièce a été peinte, sérigraphiée puis assemblée pour construire
+				cette table d'orientation planétaire.</div> <!-- MOBILE -->
+			<div class="infosProjet" id="infosLycee">Projet coordonné par Tache Papier<br><br>Dimensions de
+				l'installation&nbsp;:<br>1,60&nbsp;m (diamètre)&nbsp;×&nbsp;0,80&nbsp;m (hauteur)</div>
+			<div class="gifBas gifLycee" onclick="clickJeux();switchProjet('jeuxLink', 'jeux');">
+				<div class="fileDeCones">
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleLycee"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleLycee"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleLycee"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleLycee"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleLycee"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleLycee"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+
+	<!-- FAITES VOS JEUX -->
+
+	<div class="projet" id="jeux">
+
+		<div class="sectionImage" id="imgJeux"></div>
+		<div class="boutonsSlider">
+			<div class="precedente" onclick="imagePrecedente('premiereImageJeux')"></div>
+			<div class="suivante" onclick="imageSuivante('premiereImageJeux', -1000)"></div>
+		</div>
+
+		<div class="sectionBas">
+			<div class="titre" id="titreJeux">Faites vos jeux</div>
+			<div class="boutonGaucheMobile boutonMobileJeux" onclick="clickLycee();switchProjet('lyceeLink', 'lycee');">
+				<!-- MOBILE -->
+				<div class="fileDeConesMobile">
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle_mobile.png">
+						<div class="ovale ovaleJeux"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle_mobile.png">
+						<div class="ovale ovaleJeux"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle_mobile.png">
+						<div class="ovale ovaleJeux"></div>
+					</div>
+				</div>
+			</div>
+			<div class="boutonCentralMobile boutonCentralMobileJeux" onclick="voletGauche()"> <!-- MOBILE -->
+				<div class="diagonale1"></div>
+				<div class="diagonale2"></div>
+			</div>
+			<div class="boutonDroitMobile boutonMobileJeux"
+				onclick="clickMadeleine();switchProjet('madeleineLink', 'madeleine');">
+				<!-- MOBILE -->
+				<div class="fileDeConesMobile">
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle_mobile.png">
+						<div class="ovale ovaleJeux"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle_mobile.png">
+						<div class="ovale ovaleJeux"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle_mobile.png">
+						<div class="ovale ovaleJeux"></div>
+					</div>
+				</div>
+			</div>
+			<div class="categorie" id="categorieJeux">FLYER</div>
+			<div class="anneeProjet" id="anneeJeux">2024</div>
+			<div class="texteProjet" id="texteJeux">Conception de la carte voeux de La Madeleine, scène conventionnée de
+				Troyes, pour l'année 2024. Elle se plie dans un sens ou dans l'autre pour marquer le passage à la
+				nouvelle année et combiner les silhouettes avec leur masque respectif.</div>
+			<div class="caseMoulin">
+				<img class="moulin" src="IMAGES/moulin.png"></img>
+			</div>
+			<div class="boutonInfos" onclick="voletDroit()">INFOS</div> <!-- MOBILE -->
+		</div>
+
+		<div class="sectionDroite" id="sectionDroiteJeux">
+			<div class="gifHaut gifJeux" onclick="clickLycee();switchProjet('lyceeLink', 'lycee');">
+				<div class="fileDeCones">
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleJeux"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleJeux"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleJeux"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleJeux"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleJeux"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleJeux"></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="retour" onclick="retour();">RETOUR</div>
+			<div class="categorieMobile">FLYER</div>
+			<div class="commanditaire">LA MADELEINE</div>
+			<div class="ville">TROYES</div>
+			<div class="anneeMobile">2024</div>
+			<div class="texteProjetMobile" id="texteMobileJeux">Conception de la carte voeux de La Madeleine, scène
+				conventionnée de
+				Troyes, pour l'année 2024. Elle se plie dans un sens ou dans l'autre pour marquer le passage à la
+				nouvelle année et combiner les silhouettes avec leur masque respectif.</div> <!-- MOBILE -->
+			<div class="infosProjet" id="infosJeux">200&nbsp;×&nbsp;200&nbsp;mm<br>200 exemplaires</div>
+			<div class="gifBas gifJeux" onclick="clickMadeleine();switchProjet('madeleineLink', 'madeleine');">
+				<div class="fileDeCones">
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleJeux"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleJeux"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleJeux"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleJeux"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleJeux"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleJeux"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+
+	<!-- LA MADELEINE -->
+
+	<div class="projet" id="madeleine">
+
+		<div class="sectionImage" id="imgMadeleine"></div>
+		<div class="boutonsSlider">
+			<div class="precedente" onclick="imagePrecedente('premiereImageMadeleine')"></div>
+			<div class="suivante" onclick="imageSuivante('premiereImageMadeleine', -1700)"></div>
+		</div>
+
+		<div class="sectionBas">
+			<div class="titre" id="titreMadeleine">La Madeleine</div>
+			<div class="boutonGaucheMobile boutonMobileMadeleine"
+				onclick="clickJeux();switchProjet('jeuxLink', 'jeux');"> <!-- MOBILE -->
+				<div class="fileDeConesMobile">
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle_mobile.png">
+						<div class="ovale ovaleMadeleine"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle_mobile.png">
+						<div class="ovale ovaleMadeleine"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle_mobile.png">
+						<div class="ovale ovaleMadeleine"></div>
+					</div>
+				</div>
+			</div>
+			<div class="boutonCentralMobile boutonCentralMobileMadeleine" onclick="voletGauche()"> <!-- MOBILE -->
+				<div class="diagonale1"></div>
+				<div class="diagonale2"></div>
+			</div>
+			<div class="boutonDroitMobile boutonMobileMadeleine"
+				onclick="clickChien();switchProjet('chienLink', 'chien');"> <!-- MOBILE -->
+				<div class="fileDeConesMobile">
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle_mobile.png">
+						<div class="ovale ovaleMadeleine"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle_mobile.png">
+						<div class="ovale ovaleMadeleine"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle_mobile.png">
+						<div class="ovale ovaleMadeleine"></div>
+					</div>
+				</div>
+			</div>
+			<div class="categorie" id="categorieMadeleine">ILLUSTRATION</div>
+			<div class="anneeProjet" id="anneeMadeleine">2023</div>
+			<div class="texteProjet" id="texteMadeleine">Illustration de la saison 2023-2024 de La Madeleine, scène
+				conventionnée de Troyes. Ce travail est toujours en cours et déploit une multitude de silhouettes
+				masquées à travers le programme des spectacles, la signalétique du lieu et ses supports de
+				communication.</div>
+			<div class="caseMoulin">
+				<img class="moulin" src="IMAGES/moulin.png"></img>
+			</div>
+			<div class="boutonInfos" onclick="voletDroit()">INFOS</div> <!-- MOBILE -->
+		</div>
+
+		<div class="sectionDroite" id="sectionDroiteMadeleine">
+			<div class="gifHaut gifMadeleine" onclick="clickJeux();switchProjet('jeuxLink', 'jeux');">
+				<div class="fileDeCones">
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleMadeleine"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleMadeleine"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleMadeleine"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleMadeleine"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleMadeleine"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleMadeleine"></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="retour" onclick="retour();">RETOUR</div>
+			<div class="categorieMobile">ILLUSTRATION</div>
+			<div class="commanditaire">LA MADELEINE</div>
+			<div class="ville">TROYES</div>
+			<div class="anneeMobile">2023</div>
+			<div class="texteProjetMobile" id="texteMobileMadeleine">Illustration de la saison 2023-2024 de La
+				Madeleine, scène
+				conventionnée de Troyes. Ce travail est toujours en cours et déploit une multitude de silhouettes
+				masquées à travers le programme des spectacles, la signalétique du lieu et ses supports de
+				communication.</div>
+			<!-- MOBILE -->
+			<div class="infosProjet" id="infosMadeleine">Graphisme&nbsp;: Bruno Voidey</div>
+			<div class="gifBas gifMadeleine" onclick="clickChien();switchProjet('chienLink', 'chien');">
+				<div class="fileDeCones">
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleMadeleine"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleMadeleine"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleMadeleine"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleMadeleine"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleMadeleine"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleMadeleine"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+
+	<!-- APRES MIDI DE CHIEN -->
+
+	<div class="projet" id="chien">
+
+		<div class="sectionImage" id="imgChien"></div>
+		<div class="boutonsSlider">
+			<div class="precedente" onclick="imagePrecedente('premiereImageChien')"></div>
+			<div class="suivante" onclick="imageSuivante('premiereImageChien', -100)"></div>
+		</div>
+
+		<div class="sectionBas">
+			<div class="titre" id="titreChien">Après-midi de chien</div>
+			<div class="boutonGaucheMobile boutonMobileChien"
+				onclick="clickMadeleine();switchProjet('madeleineLink', 'madeleine');"> <!-- MOBILE -->
+				<div class="fileDeConesMobile">
+					<div class="cone">
+						<img class="triangle" preserveAspectRatio="none" src="IMAGES/triangle_mobile.svg">
+						<div class="ovale ovaleChien"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle_mobile.png">
+						<div class="ovale ovaleChien"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle_mobile.png">
+						<div class="ovale ovaleChien"></div>
+					</div>
+				</div>
+			</div>
+			<div class="boutonCentralMobile boutonCentralMobileChien" onclick="voletGauche()"> <!-- MOBILE -->
+				<div class="diagonale1"></div>
+				<div class="diagonale2"></div>
+			</div>
+			<div class="boutonDroitMobile boutonMobileChien"
+				onclick="clickBourbon();switchProjet('bourbonLink', 'bourbon');">
+				<!-- MOBILE -->
+				<div class="fileDeConesMobile">
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle_mobile.png">
+						<div class="ovale ovaleChien"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle_mobile.png">
+						<div class="ovale ovaleChien"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle_mobile.png">
+						<div class="ovale ovaleChien"></div>
+					</div>
+				</div>
+			</div>
+			<div class="categorie" id="categorieChien">IDENTITÉ VISUELLE</div>
+			<div class="anneeProjet" id="anneeChien">2023</div>
+			<div class="texteProjet" id="texteChien">Identité visuelle et communication graphique de l'exposition
+				«&nbsp;Après-midi de chien&nbsp;» initiée par Collectif Portail, du 25 août au 10 septembre 2023
+				à
+				Chagny.
+				L'exposition, soutenue par le FRAC Bourgogne, regroupe des pièces de neuf jeunes artistes, en partie
+				produites à l'issue de trois semaines de résidence. Elle est la 6e d'une série d'expositions et
+				résidences organisées
+				chaque été par Collectif Portail depuis 2018.</div>
+			<div class="caseMoulin">
+				<img class="moulin" src="IMAGES/moulin.png"></img>
+			</div>
+
+			<div class="boutonInfos" onclick="voletDroit()">INFOS</div> <!-- MOBILE -->
+		</div>
+
+		<div class="sectionDroite" id="sectionDroiteChien">
+			<div class="gifHaut gifChien" onclick="clickMadeleine();switchProjet('madeleineLink', 'madeleine');">
+				<div class="fileDeCones">
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleChien"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleChien"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleChien"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleChien"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleChien"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleChien"></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="retour" onclick="retour();">RETOUR</div>
+			<div class="categorieMobile" id="categorieMobileChien">IDENTITÉ VISUELLE</div>
+			<div class="commanditaire">COLLECTIF PORTAIL</div>
+			<div class="ville">CHAGNY</div>
+			<div class="anneeMobile">2023</div>
+			<div class="texteProjetMobile" id="texteMobileChien">Identité visuelle et communication graphique de
+				l'exposition
+				«&nbsp;Après-midi de chien&nbsp;» initiée par Collectif Portail, du 25 août au 10 septembre 2023
+				à
+				Chagny.
+				L'exposition, soutenue par le FRAC Bourgogne, regroupe des pièces de neuf jeunes artistes, en partie
+				produites à l'issue de trois semaines de résidence. Elle est la 6e d'une série d'expositions et
+				résidences organisées
+				chaque été par Collectif Portail depuis 2018.</div> <!-- MOBILE -->
+			<div class="infosProjet" id="infosChien">Affiche
+				A3<br>Impression risographie<br>50 exemplaires<br><br>Dépliant
+				148&nbsp;×&nbsp;420&nbsp;mm<br>Impression
+				risographie<br>300 exemplaires
+			</div>
+			<div class="gifBas gifChien" onclick="clickBourbon();switchProjet('bourbonLink', 'bourbon');">
+				<div class="fileDeCones">
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleChien"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleChien"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleChien"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleChien"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleChien"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleChien"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+
+	<!-- TROIS PETITS TOURS -->
+
+	<div class="projet" id="bourbon">
+
+		<div class="sectionImage" id="imgBourbon"></div>
+		<div class="boutonsSlider">
+			<div class="precedente" onclick="imagePrecedente('premiereImageBourbon')"></div>
+			<div class="suivante" onclick="imageSuivante('premiereImageBourbon', -500)"></div>
+		</div>
+
+		<div class="sectionBas">
+			<div class="titre" id="titreBourbon">Trois petit tours</div>
+			<div class="boutonGaucheMobile boutonMobileBourbon"
+				onclick="clickChien();switchProjet('chienLink', 'chien');"> <!-- MOBILE -->
+				<div class="fileDeConesMobile">
+					<div class="cone">
+						<img class="triangle" preserveAspectRatio="none" src="IMAGES/triangle_mobile.svg">
+						<div class="ovale ovaleBourbon"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle_mobile.png">
+						<div class="ovale ovaleBourbon"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle_mobile.png">
+						<div class="ovale ovaleBourbon"></div>
+					</div>
+				</div>
+			</div>
+			<div class="boutonCentralMobile boutonCentralMobileBourbon" onclick="voletGauche()"> <!-- MOBILE -->
+				<div class="diagonale1"></div>
+				<div class="diagonale2"></div>
+			</div>
+			<div class="boutonDroitMobile boutonMobileBourbon"
+				onclick="clickBataille();switchProjet('batailleLink', 'bataille');">
+				<!-- MOBILE -->
+				<div class="fileDeConesMobile">
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle_mobile.png">
+						<div class="ovale ovaleBourbon"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle_mobile.png">
+						<div class="ovale ovaleBourbon"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle_mobile.png">
+						<div class="ovale ovaleBourbon"></div>
+					</div>
+				</div>
+			</div>
+			<div class="categorie" id="categorieBourbon">AFFICHE</div>
+			<div class="anneeProjet" id="anneeBourbon">2023</div>
+			<div class="texteProjet" id="texteBourbon">Affiche de l'exposition
+				«&nbsp;Trois petits tours et puis s'en vont&nbsp;» par Joris Creuze et Sylvain Owelle dans
+				l'Église-Musée Saint-Nazaire de Bourbon-Lancy, du 13 mai au 3 septembre 2023. De la même manière que
+				les artistes reprennent des éléments architecturaux et folkloriques de la ville de Bourbon-Lancy au sein
+				de l'exposition,
+				des détails graphiques, faisant référence aux gargouilles et enseignes du centre historique de la ville,
+				sont disséminés dans l'affiche tel un
+				jeu de
+				cache-cache.</div>
+			<div class="caseMoulin">
+				<img class="moulin" src="IMAGES/moulin.png"></img>
+			</div>
+
+			<div class="boutonInfos" onclick="voletDroit()">INFOS</div> <!-- MOBILE -->
+		</div>
+
+		<div class="sectionDroite" id="sectionDroiteBourbon">
+			<div class="gifHaut gifBourbon" onclick="clickChien();switchProjet('chienLink', 'chien');">
+				<div class="fileDeCones">
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleBourbon"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleBourbon"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleBourbon"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleBourbon"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleBourbon"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleBourbon"></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="retour" onclick="retour();">RETOUR</div>
+			<div class="categorieMobile" id="categorieMobileBourbon">AFFICHE</div>
+			<div class="commanditaire">VILLE DE</div>
+			<div class="ville">BOURBON-LANCY</div>
+			<div class="anneeMobile">2023</div>
+			<div class="texteProjetMobile" id="texteMobileBourbon">Affiche de l'exposition
+				«&nbsp;Trois petits tours et puis s'en vont&nbsp;» par Joris Creuze et Sylvain Owelle dans
+				l'Église-Musée Saint-Nazaire de Bourbon-Lancy, du 13 mai au 3 septembre 2023. De la même manière que
+				les artistes reprennent des éléments architecturaux et folkloriques de la ville de Bourbon-Lancy au sein
+				de l'exposition,
+				des détails graphiques, faisant référence aux gargouilles et enseignes du centre historique de la ville,
+				sont disséminés dans l'affiche tel un
+				jeu de
+				cache-cache.</div> <!-- MOBILE -->
+			<div class="infosProjet" id="infosBourbon">235&nbsp;×&nbsp;420&nbsp;mm<br>Sérigraphie 2 couleurs<br>50
+				exemplaires
+			</div>
+			<div class="gifBas gifBourbon" onclick="clickBataille();switchProjet('batailleLink', 'bataille');">
+				<div class="fileDeCones">
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleBourbon"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleBourbon"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleBourbon"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleBourbon"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleBourbon"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleBourbon"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+
+	<!-- FLAUR -->
+
+	<!-- <div class="projet" id="flaur">
+
+		<div class="sectionImage" id="imgFlaur"></div>
+		<div class="boutonsSlider">
+			<div class="precedente" onclick="imagePrecedente('premiereImageFlaur')"></div>
+			<div class="suivante" onclick="imageSuivante('premiereImageFlaur', -2000)"></div>
+		</div>
+
+		<div class="sectionBas">
+			<div class="titre" id="titreFlaur">FLAUR</div>
+			<div class="boutonGaucheMobile boutonMobileFlaur"
+				onclick="clickChien();switchProjet('chienLink', 'chien');">
+				<div class="fileDeConesMobile">
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle_mobile.png">
+						<div class="ovale ovaleFlaur"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle_mobile.png">
+						<div class="ovale ovaleFlaur"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle_mobile.png">
+						<div class="ovale ovaleFlaur"></div>
+					</div>
+				</div>
+			</div>
+			<div class="boutonCentralMobile boutonCentralMobileFlaur" onclick="voletGauche()">
+				<div class="diagonale1"></div>
+				<div class="diagonale2"></div>
+			</div>
+			<div class="boutonDroitMobile boutonMobileFlaur"
+				onclick="clickBataille();switchProjet('batailleLink', 'bataille');">
+				<div class="fileDeConesMobile">
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle_mobile.png">
+						<div class="ovale ovaleFlaur"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle_mobile.png">
+						<div class="ovale ovaleFlaur"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle_mobile.png">
+						<div class="ovale ovaleFlaur"></div>
+					</div>
+				</div>
+			</div>
+			<div class="categorie" id="categorieFlaur">DIRECTION ARTISTIQUE</div>
+			<div class="anneeProjet" id="anneeFlaur">2023</div>
+			<div class="texteProjet" id="texteFlaur">Direction artistique de l'EP <i>Hold On</i> du groupe dijonnais
+				FLAUR.
+			</div>
+			<div class="caseMoulin">
+				<img class="moulin" src="IMAGES/moulin.png"></img>
+			</div>
+
+			<div class="boutonInfos" onclick="voletDroit()">INFOS</div>
+		</div>
+
+		<div class="sectionDroite" id="sectionDroiteFlaur">
+			<div class="gifHaut gifFlaur" onclick="clickChien();switchProjet('chienLink', 'chien');">
+				<div class="fileDeCones">
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleFlaur"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleFlaur"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleFlaur"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleFlaur"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleFlaur"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleFlaur"></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="retour" onclick="retour();">RETOUR</div>
+			<div class="categorieMobile" id="categorieMobileFlaur">DIRECTION ARTISTIQUE</div>
+			<div class="commanditaire">FLAUR</div>
+			<div class="ville">DIJON</div>
+			<div class="anneeMobile">2023</div>
+			<div class="texteProjetMobile" id="texteMobileFlaur">Direction artistique de l'EP <i>Hold On</i> du
+				groupe
+				dijonnais
+				FLAUR.</div> 
+			<div class="infosProjet" id="infosFlaur"></div>
+			<div class="gifBas gifFlaur" onclick="clickBataille();switchProjet('batailleLink', 'bataille');">
+				<div class="fileDeCones">
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleFlaur"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleFlaur"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleFlaur"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleFlaur"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleFlaur"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleFlaur"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div> -->
+
+
+	<!-- BATAILLE RISOGRAPHIQUE -->
+
+	<div class="projet" id="bataille">
+
+		<div class="sectionImage" id="imgBataille"></div>
+		<div class="boutonsSlider">
+			<div class="precedente" onclick="imagePrecedente('premiereImageBataille')"></div>
+			<div class="suivante" onclick="imageSuivante('premiereImageBataille', -1800)"></div>
+		</div>
+
+		<div class="sectionBas">
+			<div class="titre" id="titreBataille">Bataille risographique</div>
+			<div class="boutonGaucheMobile boutonMobileBataille"
+				onclick="clickBourbon();switchProjet('bourbonLink', 'bourbon');">
+				<div class="fileDeConesMobile">
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle_mobile.png">
+						<div class="ovale ovaleBataille"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle_mobile.png">
+						<div class="ovale ovaleBataille"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle_mobile.png">
+						<div class="ovale ovaleBataille"></div>
+					</div>
+				</div>
+			</div>
+			<div class="boutonCentralMobile boutonCentralMobileBataille" onclick="voletGauche()"> <!-- MOBILE -->
+				<div class="diagonale1"></div>
+				<div class="diagonale2"></div>
+			</div>
+			<div class="boutonDroitMobile boutonMobileBataille"
+				onclick="clickHoldOn();switchProjet('holdOnLink', 'holdOn');">
+				<div class="fileDeConesMobile">
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle_mobile.png">
+						<div class="ovale ovaleBataille"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle_mobile.png">
+						<div class="ovale ovaleBataille"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle_mobile.png">
+						<div class="ovale ovaleBataille"></div>
+					</div>
+				</div>
+			</div>
+			<div class="categorie" id="categorieBataille">WORKSHOP</div>
+			<div class="anneeProjet" id="anneeBataille">2023</div>
+			<div class="texteProjet" id="texteBataille">Workshop mené auprès
+				d'étudiant•e•s
+				de 1ère, 2e et 4e années à l'École Média Art de Chalon-sur-Saône autour de la risographie.<br>Les
+				étudiant•e•s ont produit des images monochromes à l'aide de papier découpé, qui étaient ensuite
+				imprimées en risographie. Iels ont, au fur et à mesure de la semaine, créé des surimpressions
+				entre toutes leurs
+				compositions, pour confronter, au gré du hasard et des
+				combinaisons, les différentes images imprimées.
+			</div>
+			<div class="caseMoulin">
+				<img class="moulin" src="IMAGES/moulin.png"></img>
+			</div>
+
+			<div class="boutonInfos" onclick="voletDroit()">INFOS</div> <!-- MOBILE -->
+		</div>
+
+		<div class="sectionDroite" id="sectionDroiteBataille">
+			<div class="gifHaut gifBataille" onclick="clickBourbon();switchProjet('bourbonLink', 'bourbon');">
+				<div class="fileDeCones">
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleBataille"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleBataille"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleBataille"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleBataille"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleBataille"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleBataille"></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="retour" onclick="retour();">RETOUR</div>
+			<div class="categorieMobile">WORKSHOP</div>
+			<div class="commanditaire">ÉCOLE MÉDIA ART</div>
+			<div class="ville">CHALON-SUR-SAÔNE</div>
+			<div class="anneeMobile">2023</div>
+			<div class="texteProjetMobile" id="texteMobileBataille">Workshop mené auprès
+				d'étudiant•e•s
+				de 1ère, 2e et 4e années à l'École Média Art de Chalon-sur-Saône autour de la risographie.<br>Les
+				étudiant.e.s ont produit des images monochromes à l'aide de papier découpé, qui étaient ensuite
+				imprimées en risographie. Iels ont, au fur et à mesure de la semaine, créé des surimpressions
+				entre toutes leurs
+				compositions, pour confronter, au gré du hasard et des
+				combinaisons, les différentes images imprimées.</div> <!-- MOBILE -->
+			<div class="infosProjet" id="infosBataille">Sur une invitation de Bruno Voidey.
+			</div>
+			<div class="gifBas gifBataille" onclick="clickHoldOn();switchProjet('holdOnLink', 'holdOn');">
+				<div class="fileDeCones">
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleBataille"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleBataille"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleBataille"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleBataille"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleBataille"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleBataille"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+
+	<!-- HOLD ON -->
+
+	<div class="projet" id="holdOn">
+
+		<div class="sectionImage" id="imgHoldOn"></div>
+		<div class="boutonsSlider">
+			<div class="precedente" onclick="imagePrecedente('premiereImageHoldOn')"></div>
+			<div class="suivante" onclick="imageSuivante('premiereImageHoldOn', -1100)"></div>
+		</div>
+
+		<div class="sectionBas">
+			<div class="titre" id="titreHoldOn">Hold On</div>
+			<div class="boutonGaucheMobile boutonMobileHoldOn"
+				onclick="clickBataille();switchProjet('batailleLink', 'bataille');">
+				<div class="fileDeConesMobile">
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle_mobile.png">
+						<div class="ovale ovaleHoldOn"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle_mobile.png">
+						<div class="ovale ovaleHoldOn"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle_mobile.png">
+						<div class="ovale ovaleHoldOn"></div>
+					</div>
+				</div>
+			</div>
+			<div class="boutonCentralMobile boutonCentralMobileHoldOn" onclick="voletGauche()"> <!-- MOBILE -->
+				<div class="diagonale1"></div>
+				<div class="diagonale2"></div>
+			</div>
+			<div class="boutonDroitMobile boutonMobileHoldOn"
+				onclick="clickOrage();switchProjet('orageLink', 'orage');">
+				<div class="fileDeConesMobile">
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle_mobile.png">
+						<div class="ovale ovaleHoldOn"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle_mobile.png">
+						<div class="ovale ovaleHoldOn"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle_mobile.png">
+						<div class="ovale ovaleHoldOn"></div>
+					</div>
+				</div>
+			</div>
+			<div class="categorie" id="categorieHoldOn">VIDÉO</div>
+			<div class="anneeProjet" id="anneeHoldOn">2022</div>
+			<div class="texteProjet" id="texteHoldOn">Clip pour la chanson <i>Hold On</i> du groupe
+				dijonnais
+				FLAUR, co-réalisé avec Félix Pommier.</div>
+			<div class="caseMoulin">
+				<img class="moulin" src="IMAGES/moulin.png"></img>
+			</div>
+			<div class="boutonInfos" onclick="voletDroit()">INFOS</div> <!-- MOBILE -->
+		</div>
+
+		<div class="sectionDroite" id="sectionDroiteHoldOn">
+			<div class="gifHaut gifHoldOn" onclick="clickBataille();switchProjet('batailleLink', 'bataille');">
+				<div class="fileDeCones">
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleHoldOn"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleHoldOn"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleHoldOn"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleHoldOn"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleHoldOn"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleHoldOn"></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="retour" onclick="retour();">RETOUR</div>
+			<div class="categorieMobile" id="categorieMobileHoldOn">VIDÉO</div>
+			<div class="commanditaire">FLAUR</div>
+			<div class="ville">DIJON</div>
+			<div class="anneeMobile">2022</div>
+			<div class="texteProjetMobile" id="texteMobileHoldOn">Clip pour la chanson <i>Hold On</i> du groupe
+				dijonnais
+				FLAUR, co-réalisé avec Félix Pommier.</div> <!-- MOBILE -->
+			<div class="infosProjet" id="infosHoldOn">Illustration, direction
+				artistique et
+				scénario&nbsp;: Julian Lagoutte<br><br>Animation&nbsp;: Félix Pommier<br><br>Musique par
+				FLAUR<br><br>Le clip est visible <a class="link" href="https://www.youtube.com/watch?v=5bjfj79tZSA"
+					target="_blank">ici</a>.</div>
+			<div class="gifBas gifHoldOn" onclick="clickOrage();switchProjet('orageLink', 'orage');">
+				<div class="fileDeCones">
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleHoldOn"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleHoldOn"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleHoldOn"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleHoldOn"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleHoldOn"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleHoldOn"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+
+	<!-- Y'A DE L'ORAGE -->
+
+	<div class="projet" id="orage">
+
+		<div class="sectionImage" id="imgOrage"></div>
+		<div class="boutonsSlider">
+			<div class="precedente" onclick="imagePrecedente('premiereImageOrage')"></div>
+			<div class="suivante" onclick="imageSuivante('premiereImageOrage', -700)"></div>
+		</div>
+
+		<div class="sectionBas">
+			<div class="titre" id="titreOrage">Y'a de l'orage</div>
+			<div class="boutonGaucheMobile boutonMobileOrage"
+				onclick="clickHoldOn();switchProjet('holdOnLink', 'holdOn');">
+				<div class="fileDeConesMobile">
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle_mobile.png">
+						<div class="ovale ovaleOrage"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle_mobile.png">
+						<div class="ovale ovaleOrage"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle_mobile.png">
+						<div class="ovale ovaleOrage"></div>
+					</div>
+				</div>
+			</div>
+			<div class="boutonCentralMobile boutonCentralMobileOrage" onclick="voletGauche()"> <!-- MOBILE -->
+				<div class="diagonale1"></div>
+				<div class="diagonale2"></div>
+			</div>
+			<div class="boutonDroitMobile boutonMobileOrage"
+				onclick="clickSunflower();switchProjet('sunflowerLink', 'sunflower');">
+				<div class="fileDeConesMobile">
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle_mobile.png">
+						<div class="ovale ovaleOrage"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle_mobile.png">
+						<div class="ovale ovaleOrage"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle_mobile.png">
+						<div class="ovale ovaleOrage"></div>
+					</div>
+				</div>
+			</div>
+			<div class="categorie" id="categorieOrage">IDENTITÉ VISUELLE</div>
+			<div class="anneeProjet" id="anneeOrage">2022</div>
+			<div class="texteProjet" id="texteOrage">Identité visuelle et communication graphique de l'exposition
+				«&nbsp;Y'a
+				de l'orage&nbsp;» initiée par Collectif Portail, et qui s'est tenue du 19 août au 4 septembre 2022
+				à
+				Chagny. L'exposition, soutenue par le FRAC Bourgogne, regroupe des pièces de neuf jeunes artistes,
+				en
+				partie produites à l'issue de trois semaines de résidence. Elle est la 5e d'une série d'expositions
+				et résidences organisées chaque été par Collectif Portail depuis 2018.</div>
+			<div class="caseMoulin">
+				<img class="moulin" src="IMAGES/moulin.png"></img>
+			</div>
+			<div class="boutonInfos" onclick="voletDroit()">INFOS</div> <!-- MOBILE -->
+		</div>
+
+		<div class="sectionDroite" id="sectionDroiteOrage">
+			<div class="gifHaut gifOrage" onclick="clickHoldOn();switchProjet('holdOnLink', 'holdOn');">
+				<div class="fileDeCones">
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleOrage"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleOrage"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleOrage"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleOrage"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleOrage"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleOrage"></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="retour" onclick="retour();">RETOUR</div>
+			<div class="categorieMobile" id="categorieMobileOrage">IDENTITÉ VISUELLE</div>
+			<div class="commanditaire">COLLECTIF PORTAIL</div>
+			<div class="ville">CHAGNY</div>
+			<div class="anneeMobile">2022</div>
+			<div class="texteProjetMobile" id="texteMobileOrage">Identité visuelle et communication graphique de
+				l'exposition
+				«&nbsp;Y'a
+				de l'orage&nbsp;» initiée par Collectif Portail, et qui s'est tenue du 19 août au 4 septembre 2022
+				à
+				Chagny. L'exposition, soutenue par le FRAC Bourgogne, regroupe des pièces de neuf jeunes artistes,
+				en
+				partie produites à l'issue de trois semaines de résidence. Elle est la 5e d'une série d'expositions
+				et résidences organisées chaque été par Collectif Portail depuis 2018.</div> <!-- MOBILE -->
+			<div class="infosProjet" id="infosOrage">Affiche A3<br>Impression risographie <br>50
+				exemplaires<br><br>Dépliant 148&nbsp;×&nbsp;420&nbsp;mm<br>Impression risographie<br>200
+				exemplaires</div>
+			<div class="gifBas gifOrage" onclick="clickSunflower();switchProjet('sunflowerLink', 'sunflower');">
+				<div class="fileDeCones">
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleOrage"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleOrage"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleOrage"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleOrage"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleOrage"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleOrage"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+
+	<!-- SUNFLOWER -->
+
+	<div class="projet" id="sunflower">
+
+		<div class="sectionImage" id="imgSunflower"></div>
+		<div class="boutonsSlider">
+			<div class="precedente" onclick="imagePrecedente('premiereImageSunflower')"></div>
+			<div class="suivante" onclick="imageSuivante('premiereImageSunflower', -900)"></div>
+		</div>
+
+		<div class="sectionBas">
+			<div class="titre" id="titreSunflower">Sunflower</div>
+			<div class="boutonGaucheMobile boutonMobileSunflower"
+				onclick="clickOrage();switchProjet('orageLink', 'orage');">
+				<div class="fileDeConesMobile">
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle_mobile.png">
+						<div class="ovale ovaleSunflower"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle_mobile.png">
+						<div class="ovale ovaleSunflower"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle_mobile.png">
+						<div class="ovale ovaleSunflower"></div>
+					</div>
+				</div>
+			</div>
+			<div class="boutonCentralMobile boutonCentralMobileSunflower" onclick="voletGauche()"> <!-- MOBILE -->
+				<div class="diagonale1"></div>
+				<div class="diagonale2"></div>
+			</div>
+			<div class="boutonDroitMobile boutonMobileSunflower"
+				onclick="clickAstro();switchProjet('astroLink', 'astro');">
+				<div class="fileDeConesMobile">
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle_mobile.png">
+						<div class="ovale ovaleSunflower"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle_mobile.png">
+						<div class="ovale ovaleSunflower"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle_mobile.png">
+						<div class="ovale ovaleSunflower"></div>
+					</div>
+				</div>
+			</div> <!-- MOBILE -->
+			<div class="categorie" id="categorieSunflower">VIDÉO</div>
+			<div class="anneeProjet" id="anneeSunflower">2022</div>
+			<div class="texteProjet" id="texteSunflower">Clip animé pour la chanson <i>Sunflower</i> du groupe
+				dijonnais
+				FLAUR. La chanson aborde les thèmes du voyage et de la découverte de l'inconnue et le clip suit les
+				déambulations d'un personnage à travers un monde fantastique et onirique.</div>
+			<div class="caseMoulin">
+				<img class="moulin" src="IMAGES/moulin.png"></img>
+			</div>
+			<div class="boutonInfos" onclick="voletDroit()">INFOS</div> <!-- MOBILE -->
+		</div>
+
+		<div class="sectionDroite" id="sectionDroiteSunflower">
+			<div class="gifHaut gifSunflower" onclick="clickOrage();switchProjet('orageLink', 'orage');">
+				<div class="fileDeCones">
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleSunflower"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleSunflower"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleSunflower"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleSunflower"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleSunflower"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleSunflower"></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="retour" onclick="retour();">RETOUR</div>
+			<div class="categorieMobile" id="categorieMobileSunflower">VIDÉO</div>
+			<div class="commanditaire">FLAUR</div>
+			<div class="ville">DIJON</div>
+			<div class="anneeMobile">2022</div>
+			<div class="texteProjetMobile" id="texteMobileSunflower">Clip animé pour la chanson <i>Sunflower</i> du
+				groupe dijonnais
+				FLAUR. La chanson aborde les thèmes du voyage et de la découverte de l'inconnue et le clip suit les
+				déambulations d'un personnage à travers un monde fantastique et onirique.</div> <!-- MOBILE -->
+			<div class="infosProjet" id="infosSunflower">Musique par FLAUR<br><br>Le clip est visible <a class="link"
+					href="https://www.youtube.com/watch?v=mQ_dYY3_0VA" target="_blank">ici</a>.</div>
+			<div class="gifBas gifSunflower" onclick="clickAstro();switchProjet('astroLink', 'astro');">
+				<div class="fileDeCones">
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleSunflower"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleSunflower"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleSunflower"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleSunflower"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleSunflower"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleSunflower"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+
+	<!-- LES ASTRONOMES -->
+
+	<div class="projet" id="astro">
+
+		<div class="sectionImage" id="imgAstro"></div>
+		<div class="boutonsSlider">
+			<div class="precedente" onclick="imagePrecedente('premiereImageAstro')"></div>
+			<div class="suivante" onclick="imageSuivante('premiereImageAstro', -1800)"></div>
+		</div>
+
+		<div class="sectionBas">
+			<div class="titre" id="titreAstro">Les astronomes</div>
+			<div class="boutonGaucheMobile boutonMobileAstro"
+				onclick="clickSunflower();switchProjet('sunflowerLink', 'sunflower');">
+				<div class="fileDeConesMobile">
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle_mobile.png">
+						<div class="ovale ovaleAstro"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle_mobile.png">
+						<div class="ovale ovaleAstro"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle_mobile.png">
+						<div class="ovale ovaleAstro"></div>
+					</div>
+				</div>
+			</div>
+			<div class="boutonCentralMobile boutonCentralMobileAstro" onclick="voletGauche()"> <!-- MOBILE -->
+				<div class="diagonale1"></div>
+				<div class="diagonale2"></div>
+			</div>
+			<div class="boutonDroitMobile boutonMobileAstro"
+				onclick="clickVapeur();switchProjet('vapeurLink', 'vapeur');">
+				<div class="fileDeConesMobile">
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle_mobile.png">
+						<div class="ovale ovaleAstro"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle_mobile.png">
+						<div class="ovale ovaleAstro"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle_mobile.png">
+						<div class="ovale ovaleAstro"></div>
+					</div>
+				</div>
+			</div>
+			<div class="categorie" id="categorieAstro">ÉDITION</div>
+			<div class="anneeProjet" id="anneeAstro">2022</div>
+			<div class="texteProjet" id="texteAstro">Un astronome qui se plaint de la monotonie du ciel, qui joue au
+				golf avec
+				des étoiles tombées du ciel, ou encore qui accuse un trou noir d'avoir englouti son repas… Des
+				situations banales qui pourraient bien se produire dans la bande dessinée circulaire <i>Les
+					astronomes</i>. En faisant tourner les disques qui la compose, le lecteur combine les cases
+				entre
+				elles pour se raconter ses propres histoires et générer des situations plus ou moins
+				incongrues.<br><br>
+				Cette édition est le fruit d'une semaine de résidence au Tache Papier à Dijon et s'inscrit dans mes
+				recherches autour des volvelles, des objets rotatifs utilisés à partir du XVe siècle dans les livres
+				d'astronomie ou les cartes du ciel. Je réinterprète alors le principe de ces objets pour y injecter
+				une
+				dimension narrative.<br><br><i>Les astronomes</i> a été édité aux éditions du Tache Papier et a été
+				imprimé et façonné en 30 exemplaires. Pour accompagner le lancement de l'édition, j'ai également
+				imaginé
+				une exposition interactive qui prolonge la bande-dessinée à travers des disques muraux, qui
+				pouvaient
+				être manipulés librement par les visiteurs.</div>
+			<div class="caseMoulin">
+				<img class="moulin" src="IMAGES/moulin.png"></img>
+			</div>
+			<div class="boutonInfos" onclick="voletDroit()">INFOS</div> <!-- MOBILE -->
+		</div>
+
+		<div class="sectionDroite" id="sectionDroiteAstro">
+			<div class="gifHaut gifAstro" onclick="clickSunflower();switchProjet('sunflowerLink', 'sunflower');">
+				<div class="fileDeCones">
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleAstro"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleAstro"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleAstro"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleAstro"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleAstro"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleAstro"></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="retour" onclick="retour();">RETOUR</div>
+			<div class="categorieMobile" id="categorieMobileAstro">ÉDITION</div>
+			<div class="commanditaire">TACHE PAPIER</div>
+			<div class="ville">DIJON</div>
+			<div class="anneeMobile">2022</div>
+			<div class="texteProjetMobile" id="texteMobileAstro">Un astronome qui se plaint de la monotonie du ciel,
+				qui
+				joue au
+				golf avec
+				des étoiles tombées du ciel, ou encore qui accuse un trou noir d'avoir englouti son repas… Des
+				situations banales qui pourraient bien se produire dansla bande dessinée circulaire <i>Les
+					astronomes</i>. En faisant tourner les disques qui la compose, le lecteur combine les cases
+				entre
+				elles pour se raconter ses propres histoires et générer des situations plus ou moins
+				incongrues.<br><br>
+				Cette édition est le fruit d'une semaine de résidence au Tache Papier à Dijon et s'inscrit dans mes
+				recherches autour des volvelles, des objets rotatifs utilisés à partir du XVe siècle dans les livres
+				d'astronomie ou les cartes du ciel. Je réinterprète alors le principe de ces objets pour y injecter
+				une
+				dimension narrative.<br><br><i>Les astronomes</i> a été édité aux éditions du Tache Papier et a été
+				imprimé et façonné en 30 exemplaires. Pour accompagner le lancement de l'édition, j'ai également
+				imaginé
+				une exposition interactive qui prolonge la bande-dessinée à travers des disques muraux, qui
+				pouvaient
+				être manipulés librement par les visiteurs.</div> <!-- MOBILE -->
+			<div class="infosProjet" id="infosAstro">320&nbsp;×&nbsp;320&nbsp;mm<br>Impression risographie
+				(disque) et sérigraphie (pochette)<br><br>1ère édition&nbsp;:<br>mars
+				2022<br>30
+				exemplaires<br><br>2nde édition&nbsp;:<br>septembre 2023<br>60
+				exemplaires
+			</div>
+			<div class="gifBas gifAstro" onclick="clickVapeur();switchProjet('vapeurLink', 'vapeur');">
+				<div class="fileDeCones">
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleAstro"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleAstro"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleAstro"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleAstro"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleAstro"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleAstro"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+
+	<!-- LA VAPEUR -->
+
+	<div class="projet" id="vapeur">
+
+		<div class="sectionImage" id="imgVapeur"></div>
+		<div class="boutonsSlider">
+			<div class="precedente" onclick="imagePrecedente('premiereImageVapeur')"></div>
+			<div class="suivante" onclick="imageSuivante('premiereImageVapeur', -1800)"></div>
+		</div>
+
+		<div class="sectionBas">
+			<div class="titre" id="titreVapeur">La Vapeur</div>
+			<div class="boutonGaucheMobile boutonMobileVapeur"
+				onclick="clickAstro();switchProjet('astroLink', 'astro');">
+				<div class="fileDeConesMobile">
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle_mobile.png">
+						<div class="ovale ovaleVapeur"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle_mobile.png">
+						<div class="ovale ovaleVapeur"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle_mobile.png">
+						<div class="ovale ovaleVapeur"></div>
+					</div>
+				</div>
+			</div>
+			<div class="boutonCentralMobile boutonCentralMobileVapeur" onclick="voletGauche()"> <!-- MOBILE -->
+				<div class="diagonale1"></div>
+				<div class="diagonale2"></div>
+			</div>
+			<div class="boutonDroitMobile boutonMobileVapeur"
+				onclick="clickGrandDej();switchProjet('grandDejLink', 'grandDej');">
+				<div class="fileDeConesMobile">
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle_mobile.png">
+						<div class="ovale ovaleVapeur"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle_mobile.png">
+						<div class="ovale ovaleVapeur"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle_mobile.png">
+						<div class="ovale ovaleVapeur"></div>
+					</div>
+				</div>
+			</div>
+			<div class="categorie" id="categorieVapeur">ILLUSTRATION</div>
+			<div class="anneeProjet" id="anneeVapeur">2021</div>
+			<div class="texteProjet" id="texteVapeur">Illustration de la saison 2021-2022 de La Vapeur, scène de
+				musiques actuelles à Dijon.</div>
+			<div class="caseMoulin">
+				<img class="moulin" src="IMAGES/moulin.png"></img>
+			</div>
+			<div class="boutonInfos" onclick="voletDroit()">INFOS</div> <!-- MOBILE -->
+		</div>
+
+		<div class="sectionDroite" id="sectionDroiteVapeur">
+			<div class="gifHaut gifVapeur" onclick="clickAstro();switchProjet('astroLink', 'astro');">
+				<div class="fileDeCones">
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleVapeur"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleVapeur"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleVapeur"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleVapeur"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleVapeur"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleVapeur"></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="retour" onclick="retour();">RETOUR</div>
+			<div class="categorieMobile">ILLUSTRATION</div>
+			<div class="commanditaire">LA VAPEUR</div>
+			<div class="ville">DIJON</div>
+			<div class="anneeMobile">2021</div>
+			<div class="texteProjetMobile" id="texteMobileVapeur">Illustration de la saison 2021-2022 de La Vapeur,
+				scène de
+				musiques actuelles à Dijon.</div> <!-- MOBILE -->
+			<div class="infosProjet" id="infosVapeur">Graphisme&nbsp;: Trafik<br><br>Un Pantone différent a été
+				utilisé à chaque trimestre,
+				pour
+				l'impression des programmes et des affiches A3.
+			</div>
+			<div class="gifBas gifVapeur" onclick="clickGrandDej();switchProjet('grandDejLink', 'grandDej');">
+				<div class="fileDeCones">
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleVapeur"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleVapeur"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleVapeur"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleVapeur"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleVapeur"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleVapeur"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+
+	<!-- LA GRAND DEJ -->
+
+	<div class="projet" id="grandDej">
+
+		<div class="sectionImage" id="imgGrandDej"></div>
+		<div class="boutonsSlider">
+			<div class="precedente" onclick="imagePrecedente('premiereImageGrandDej')"></div>
+			<div class="suivante" onclick="imageSuivante('premiereImageGrandDej', -200)"></div>
+		</div>
+
+		<div class="sectionBas">
+			<div class="titre" id="titreGrandDej">Le Grand Dej'</div>
+			<div class="boutonGaucheMobile boutonMobileGrandDej"
+				onclick="clickVapeur();switchProjet('vapeurLink', 'vapeur');">
+				<div class="fileDeConesMobile">
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle_mobile.png">
+						<div class="ovale ovaleGrandDej"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle_mobile.png">
+						<div class="ovale ovaleGrandDej"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle_mobile.png">
+						<div class="ovale ovaleGrandDej"></div>
+					</div>
+				</div>
+			</div>
+			<div class="boutonCentralMobile boutonCentralMobileGrandDej" onclick="voletGauche()"> <!-- MOBILE -->
+				<div class="diagonale1"></div>
+				<div class="diagonale2"></div>
+			</div>
+			<div class="boutonDroitMobile" onclick="clickTrous();switchProjet('trousLink', 'trous');">
+				<div class="fileDeConesMobile">
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle_mobile.png">
+						<div class="ovale ovaleGrandDej"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle_mobile.png">
+						<div class="ovale ovaleGrandDej"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle_mobile.png">
+						<div class="ovale ovaleGrandDej"></div>
+					</div>
+				</div>
+			</div>
+			<div class="categorie" id="categorieGrandDej">AFFICHE</div>
+			<div class="anneeProjet" id="anneeGrandDej">2021</div>
+			<div class="texteProjet" id="texteGrandDej">Affiche de l'édition 2021 du Grand Dej', le rendez-vous
+				annuel
+				des associations de
+				Dijon, co-organisé par La Ligue de l'enseignement de Côte-d'Or et la Fédération Régionale des MJC de
+				Bourgogne-Franche-Comté.</div>
+			<div class="caseMoulin">
+				<img class="moulin" src="IMAGES/moulin.png"></img>
+			</div>
+			<div class="boutonInfos" onclick="voletDroit()">INFOS</div> <!-- MOBILE -->
+		</div>
+
+		<div class="sectionDroite" id="sectionDroiteGrandDej">
+			<div class="gifHaut gifGrandDej" onclick="clickVapeur();switchProjet('vapeurLink', 'vapeur');">
+				<div class="fileDeCones">
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleGrandDej"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleGrandDej"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleGrandDej"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleGrandDej"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleGrandDej"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleGrandDej"></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="retour" onclick="retour();">RETOUR</div>
+			<div class="categorieMobile" id="categorieMobileGrandDej">AFFICHE</div>
+			<div class="commanditaire">FRMJC BOURGOGNE</div>
+			<div class="ville">DIJON</div>
+			<div class="anneeMobile">2021</div>
+			<div class="texteProjetMobile" id="texteMobileGrandDej">Affiche de l'édition 2021 du Grand Dej', le
+				rendez-vous annuel
+				des associations de
+				Dijon, co-organisé par La Ligue de l'enseignement de Côte-d'Or et la Fédération Régionale des MJC de
+				Bourgogne-Franche-Comté.</div> <!-- MOBILE -->
+			<div class="infosProjet" id="infosGrandDej">Commande pour le Tache Papier<br><br>Affiche
+				1200&nbsp;×&nbsp;1760&nbsp;mm
+			</div>
+			<div class="gifBas gifGrandDej" onclick="clickTrous();switchProjet('trousLink', 'trous');">
+				<div class="fileDeCones">
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleGrandDej"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleGrandDej"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleGrandDej"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleGrandDej"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleGrandDej"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleGrandDej"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+
+	<!-- DES TROUS DANS LES MURS -->
+
+	<div class="projet" id="trous">
+
+		<div class="sectionImage" id="imgTrous"></div>
+		<div class="boutonsSlider">
+			<div class="precedente" onclick="imagePrecedente('premiereImageTrous')"></div>
+			<div class="suivante" onclick="imageSuivante('premiereImageTrous', -700)"></div>
+		</div>
+
+		<div class="sectionBas">
+			<div class="titre" id="titreTrous">Des trous dans les murs</div>
+			<div class="boutonGaucheMobile boutonMobileTrous"
+				onclick="clickGrandDej();switchProjet('grandDejLink', 'grandDej');">
+				<div class="fileDeConesMobile">
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle_mobile.png">
+						<div class="ovale ovaleTrous"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle_mobile.png">
+						<div class="ovale ovaleTrous"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle_mobile.png">
+						<div class="ovale ovaleTrous"></div>
+					</div>
+				</div>
+			</div>
+			<div class="boutonCentralMobile boutonCentralMobileTrous" onclick="voletGauche()"> <!-- MOBILE -->
+				<div class="diagonale1"></div>
+				<div class="diagonale2"></div>
+			</div>
+			<div class="boutonDroitMobile boutonMobileTrous" onclick="clickVoeux();switchProjet('voeuxLink', 'voeux');">
+				<div class="fileDeConesMobile">
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle_mobile.png">
+						<div class="ovale ovaleTrous"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle_mobile.png">
+						<div class="ovale ovaleTrous"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle_mobile.png">
+						<div class="ovale ovaleTrous"></div>
+					</div>
+				</div>
+			</div>
+			<div class="categorie" id="categorieTrous">IDENTITÉ VISUELLE</div>
+			<div class="anneeProjet" id="anneeTrous">2021</div>
+			<div class="texteProjet" id="texteTrous">Identité visuelle et communication graphique de l'exposition
+				«&nbsp;Des
+				trous dans les murs&nbsp;» initiée par Collectif Portail, du 28 août au 12 septembre 2021 à
+				Chagny.
+				L'exposition, soutenue par le FRAC Bourgogne, regroupe des pièces de onze jeunes artistes, en partie
+				produites à l'issue de trois semaines de résidence. Elle est la 4e d'une série d'expositions et
+				résidences organisées
+				chaque été par Collectif Portail depuis 2018.</div>
+			<div class="caseMoulin">
+				<img class="moulin" src="IMAGES/moulin.png"></img>
+			</div>
+			<div class="boutonInfos" onclick="voletDroit()">INFOS</div> <!-- MOBILE -->
+		</div>
+
+		<div class="sectionDroite" id="sectionDroiteTrous">
+			<div class="gifHaut gifTrous" onclick="clickGrandDej();switchProjet('grandDejLink', 'grandDej');">
+				<div class="fileDeCones">
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleTrous"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleTrous"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleTrous"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleTrous"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleTrous"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleTrous"></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="retour" onclick="retour();">RETOUR</div>
+			<div class="categorieMobile" id="categorieMobileTrous">IDENTITÉ VISUELLE</div>
+			<div class="commanditaire">COLLECTIF PORTAIL</div>
+			<div class="ville">CHAGNY</div>
+			<div class="anneeMobile">2021</div>
+			<div class="texteProjetMobile" id="texteMobileTrous">Identité visuelle et communication graphique de
+				l'exposition
+				«&nbsp;Des
+				trous dans les murs&nbsp;» initiée par Collectif Portail, du 28 août au 12 septembre 2021 à
+				Chagny.
+				L'exposition, soutenue par le FRAC Bourgogne, regroupe des pièces de onze jeunes artistes, en partie
+				produites à l'issue de trois semaines de résidence. Elle est la 4e d'une série d'expositions et
+				résidences organisées
+				chaque été par Collectif Portail depuis 2018.</div> <!-- MOBILE -->
+			<div class="infosProjet" id="infosTrous">Affiche
+				A3<br>Impression risographie<br>50 exemplaires<br><br>Dépliant
+				148&nbsp;×&nbsp;420&nbsp;mm<br>Impression
+				risographie<br>300 exemplaires
+			</div>
+			<div class="gifBas gifTrous" onclick="clickVoeux();switchProjet('voeuxLink', 'voeux');">
+				<div class="fileDeCones">
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleTrous"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleTrous"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleTrous"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleTrous"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleTrous"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleTrous"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+
+	<!-- VOEUX ESAD GV -->
+
+	<div class="projet" id="voeux">
+
+		<div class="sectionImage" id="imgVoeux"></div>
+		<div class="boutonsSlider">
+			<div class="precedente" onclick="imagePrecedente('premiereImageVoeux')"></div>
+			<div class="suivante" onclick="imageSuivante('premiereImageVoeux', -600)"></div>
+		</div>
+
+		<div class="sectionBas">
+			<div class="titre" id="titreVoeux">Vœux ÉSAD •GV</div>
+			<div class="boutonGaucheMobile boutonMobileVoeux"
+				onclick="clickTrous();switchProjet('trousLink', 'trous');">
+				<div class="fileDeConesMobile">
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle_mobile.png">
+						<div class="ovale ovaleVoeux"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle_mobile.png">
+						<div class="ovale ovaleVoeux"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle_mobile.png">
+						<div class="ovale ovaleVoeux"></div>
+					</div>
+				</div>
+			</div>
+			<div class="boutonCentralMobile boutonCentralMobileVoeux" onclick="voletGauche()"> <!-- MOBILE -->
+				<div class="diagonale1"></div>
+				<div class="diagonale2"></div>
+			</div>
+			<div class="boutonDroitMobile boutonMobileVoeux" onclick="clickDisco();switchProjet('discoLink', 'disco');">
+				<div class="fileDeConesMobile">
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle_mobile.png">
+						<div class="ovale ovaleVoeux"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle_mobile.png">
+						<div class="ovale ovaleVoeux"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle_mobile.png">
+						<div class="ovale ovaleVoeux"></div>
+					</div>
+				</div>
+			</div>
+			<div class="categorie" id="categorieVoeux">FLYER</div>
+			<div class="anneeProjet" id="anneeVoeux">2021</div>
+			<div class="texteProjet" id="texteVoeux">Conception graphique de la carte de vœux de l'École Supérieure
+				d'Art et Design •Grenoble •Valence pour l'année 2021.</div>
+			<div class="caseMoulin">
+				<img class="moulin" src="IMAGES/moulin.png"></img>
+			</div>
+			<div class="boutonInfos" onclick="voletDroit()">INFOS</div> <!-- MOBILE -->
+		</div>
+
+		<div class="sectionDroite" id="sectionDroiteVoeux">
+			<div class="gifHaut gifVoeux" onclick="clickVoeux();switchProjet('voeuxLink', 'voeux');">
+				<div class="fileDeCones">
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleVoeux"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleVoeux"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleVoeux"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleVoeux"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleVoeux"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleVoeux"></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="retour" onclick="retour();">RETOUR</div>
+			<div class="categorieMobile">FLYER</div>
+			<div class="commanditaire">ÉSAD •GV</div>
+			<div class="ville">VALENCE</div>
+			<div class="anneeMobile">2021</div>
+			<div class="texteProjetMobile" id="texteMobileVoeux">Conception graphique de la carte de vœux de l'École
+				Supérieure
+				d'Art et Design •Grenoble •Valence pour l'année 2021.</div> <!-- MOBILE -->
+			<div class="infosProjet" id="infosVoeux">210&nbsp;×&nbsp;148 mm<br>Impression offset<br>Pantone Blue
+				072
+				U et 7753
+				U<br>1000 exemplaires<br><br>En collaboration avec Ariane Corfmat et Sirima de
+				Rességuier</div>
+			<div class="gifBas gifVoeux" onclick="clickDisco();switchProjet('discoLink', 'disco');">
+				<div class="fileDeCones">
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleVoeux"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleVoeux"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleVoeux"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleVoeux"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleVoeux"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleVoeux"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+
+	<!-- DISCO-GRAPHIQUES -->
+
+	<div class="projet" id="disco">
+
+		<div class="sectionImage" id="imgDisco"></div>
+		<div class="boutonsSlider">
+			<div class="precedente" onclick="imagePrecedente('premiereImageDisco')"></div>
+			<div class="suivante" onclick="imageSuivante('premiereImageDisco', -900)"></div>
+		</div>
+
+		<div class="sectionBas">
+			<div class="titre" id="titreDisco">Disco-graphiques</div>
+			<div class="boutonGaucheMobile boutonMobileDisco"
+				onclick="clickVoeux();switchProjet('voeuxLink', 'voeux');">
+				<div class="fileDeConesMobile">
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle_mobile.png">
+						<div class="ovale ovaleDisco"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle_mobile.png">
+						<div class="ovale ovaleDisco"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle_mobile.png">
+						<div class="ovale ovaleDisco"></div>
+					</div>
+				</div>
+			</div>
+			<div class="boutonCentralMobile boutonCentralMobileDisco" onclick="voletGauche()"> <!-- MOBILE -->
+				<div class="diagonale1"></div>
+				<div class="diagonale2"></div>
+			</div>
+			<div class="boutonDroitMobile boutonMobileDisco"
+				onclick="clickTohuBohu();switchProjet('tohuBohuLink', 'tohuBohu');">
+				<div class="fileDeConesMobile">
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle_mobile.png">
+						<div class="ovale ovaleDisco"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle_mobile.png">
+						<div class="ovale ovaleDisco"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle_mobile.png">
+						<div class="ovale ovaleDisco"></div>
+					</div>
+				</div>
+			</div>
+			<div class="categorie" id="categorieDisco">ATELIERS</div>
+			<div class="anneeProjet" id="anneeDisco">2020</div>
+			<div class="texteProjet" id="texteDisco"><i>Disco-graphiques</i> est une série d'ateliers jeune public
+				conçus pour La Fabrique, du 21 décembre 2019 au 1er mars 2020 au Centre Georges Pompidou.<br><br>À
+				travers ces ateliers, j'initie les participant•es aux principes de la conception
+				paramétrique et leur propose de réinterpréter le vocabulaire graphique des feux d'artifice et des
+				volvelles. À partir d'applications numériques et de répertoires de formes que je leur fournis, ainsi
+				qu'à l'aide de la découpe laser, iels conçoivent des compositions graphiques, ludiques et
+				contemplatives, basées sur le cercle et la rotation.</div>
+			<div class="caseMoulin">
+				<img class="moulin" src="IMAGES/moulin.png"></img>
+			</div>
+			<div class="boutonInfos" onclick="voletDroit()">INFOS</div> <!-- MOBILE -->
+		</div>
+
+		<div class="sectionDroite" id="sectionDroiteDisco">
+			<div class="gifHaut gifDisco" onclick="clickVoeux();switchProjet('voeuxLink', 'voeux');">
+				<div class="fileDeCones">
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleDisco"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleDisco"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleDisco"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleDisco"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleDisco"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleDisco"></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="retour" onclick="retour();">RETOUR</div>
+			<div class="categorieMobile" id="categorieMobileDisco">ATELIERS</div>
+			<div class="commanditaire">CENTRE POMPIDOU</div>
+			<div class="ville">PARIS</div>
+			<div class="anneeMobile">2020</div>
+			<div class="texteProjetMobile" id="texteMobileDisco"><i>Disco-graphiques</i> est une série d'ateliers
+				jeune
+				public
+				conçus pour La Fabrique, du 21 décembre 2019 au 1er mars 2020 au Centre Georges Pompidou.<br><br>À
+				travers ces ateliers, j'initie les participant•es aux principes de la conception
+				paramétrique et leur propose de réinterpréter le vocabulaire graphique des feux d'artifice et des
+				volvelles. À partir d'applications numériques et de répertoires de formes que je leur fournis, ainsi
+				qu'à l'aide de la découpe laser, iels conçoivent des compositions graphiques, ludiques et
+				contemplatives, basées sur le cercle et la rotation.</div> <!-- MOBILE -->
+			<div class="infosProjet" id="infosDisco">En partenariat avec le magazine Étapes:
+				autour du numéro consacré aux jeunes diplômés.<br><br>Vidéo de présentation et interview visible <a
+					class="link" href="https://www.youtube.com/watch?v=1o3sNlTkldQ" target="_blank">ici</a>.</div>
+			<div class="gifBas gifDisco" onclick="clickTohuBohu();switchProjet('tohuBohuLink', 'tohuBohu');">
+				<div class="fileDeCones">
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleDisco"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleDisco"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleDisco"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleDisco"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleDisco"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleDisco"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+
+	<!-- TOHU-BOHU -->
+
+	<div class="projet" id="tohuBohu">
+
+		<div class="sectionImage" id="imgTohuBohu"></div>
+		<div class="boutonsSlider">
+			<div class="precedente" onclick="imagePrecedente('premiereImageTohuBohu')"></div>
+			<div class="suivante" onclick="imageSuivante('premiereImageTohuBohu', -1000)"></div>
+		</div>
+
+		<div class="sectionBas">
+			<div class="titre" id="titreTohuBohu">Tohu-Bohu</div>
+			<div class="boutonGaucheMobile boutonMobileTohuBohu"
+				onclick="clickDisco();switchProjet('discoLink', 'disco');">
+				<div class="fileDeConesMobile">
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle_mobile.png">
+						<div class="ovale ovaleTohuBohu"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle_mobile.png">
+						<div class="ovale ovaleTohuBohu"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle_mobile.png">
+						<div class="ovale ovaleTohuBohu"></div>
+					</div>
+				</div>
+			</div>
+			<div class="boutonCentralMobile boutonCentralMobileTohuBohu" onclick="voletGauche()"> <!-- MOBILE -->
+				<div class="diagonale1"></div>
+				<div class="diagonale2"></div>
+			</div>
+			<div class="boutonDroitMobile boutonMobileTohuBohu"
+				onclick="clickVoyeurs();switchProjet('voyeursLink', 'voyeurs');">
+				<div class="fileDeConesMobile">
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle_mobile.png">
+						<div class="ovale ovaleTohuBohu"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle_mobile.png">
+						<div class="ovale ovaleTohuBohu"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle_mobile.png">
+						<div class="ovale ovaleTohuBohu"></div>
+					</div>
+				</div>
+			</div>
+			<div class="categorie" id="categorieTohuBohu">TYPOGRAPHIE</div>
+			<div class="anneeProjet" id="anneeTohuBohu">2019</div>
+			<div class="texteProjet" id="texteTohuBohu">Tohu-bohu est un caractère typographique à la frontière
+				entre la
+				lettre
+				et le signe. Il est composé de deux types d'éléments, des «&nbsp;pleins&nbsp;» et des
+				«&nbsp;angles&nbsp;», qui sont interchangeables afin de modifier le dessin de chaque caractère.
+				Avec
+				un set de 20 éléments pleins et 20 éléments d'angle, Tohu-bohu possède 400 variations
+				potentielles. La combinaison des modules et la construction des lettres se fait pendant la
+				saisie, grâce à un système de ligatures.</div>
+			<div class="caseMoulin">
+				<img class="moulin" src="IMAGES/moulin.png"></img>
+			</div>
+			<div class="boutonInfos" onclick="voletDroit()">INFOS</div> <!-- MOBILE -->
+		</div>
+
+		<div class="sectionDroite" id="sectionDroiteTohuBohu">
+			<div class="gifHaut gifTohuBohu" onclick="clickDisco();switchProjet('discoLink', 'disco');">
+				<div class="fileDeCones">
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleTohuBohu"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleTohuBohu"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleTohuBohu"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleTohuBohu"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleTohuBohu"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleTohuBohu"></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="retour" onclick="retour();">RETOUR</div>
+			<div class="categorieMobile" id="categorieMobileTohuBohu">TYPOGRAPHIE</div>
+			<div class="commanditaire">PROJET PERSONNEL</div>
+			<div class="ville">VALENCE</div>
+			<div class="anneeMobile">2019</div>
+			<div class="texteProjetMobile" id="texteMobileTohuBohu">Tohu-bohu est un caractère typographique à la
+				frontière entre la
+				lettre
+				et le signe. Il est composé de deux types d'éléments, des «&nbsp;pleins&nbsp;» et des
+				«&nbsp;angles&nbsp;», qui sont interchangeables afin de modifier le dessin de chaque caractère.
+				Avec
+				un set de 20 éléments pleins et 20 éléments d'angle, Tohu-bohu possède 400 variations
+				potentielles. La combinaison des modules et la construction des lettres se fait pendant la
+				saisie, grâce à un système de ligatures.</div> <!-- MOBILE -->
+			<div class="infosProjet" id="infosTohuBohu">Vidéo de démonstration visible <a class="link"
+					href="https://vimeo.com/user73764747" target="_blank">ici</a>.<br><br>Specimen&nbsp;:
+				230&nbsp;×&nbsp;320 mm, 28 pages<br>Impression numérique</div>
+			<div class="gifBas gifTohuBohu" onclick="clickVoyeurs();switchProjet('voyeursLink', 'voyeurs');">
+				<div class="fileDeCones">
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleTohuBohu"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleTohuBohu"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleTohuBohu"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleTohuBohu"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleTohuBohu"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleTohuBohu"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+
+	<!-- EXEMPLAIRES 2019 -->
+
+	<div class="projet" id="voyeurs">
+
+		<div class="sectionImage" id="imgVoyeurs"></div>
+		<div class="boutonsSlider">
+			<div class="precedente" onclick="imagePrecedente('premiereImageVoyeurs')"></div>
+			<div class="suivante" onclick="imageSuivante('premiereImageVoyeurs', -1200)"></div>
+		</div>
+
+		<div class="sectionBas">
+			<div class="titre" id="titreVoyeurs">Exemplaires 2019</div>
+			<div class="boutonGaucheMobile boutonMobileVoyeurs"
+				onclick="clickTohuBohu();switchProjet('tohuBohuLink', 'tohuBohu');">
+				<div class="fileDeConesMobile">
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle_mobile.png">
+						<div class="ovale ovaleVoyeurs"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle_mobile.png">
+						<div class="ovale ovaleVoyeurs"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle_mobile.png">
+						<div class="ovale ovaleVoyeurs"></div>
+					</div>
+				</div>
+			</div>
+			<div class="boutonCentralMobile boutonCentralMobileVoyeurs" onclick="voletGauche()"> <!-- MOBILE -->
+				<div class="diagonale1"></div>
+				<div class="diagonale2"></div>
+			</div>
+			<div class="boutonDroitMobile boutonMobileVoyeurs"
+				onclick="clickMemoire();switchProjet('memoireLink', 'memoire');">
+				<div class="fileDeConesMobile">
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle_mobile.png">
+						<div class="ovale ovaleVoyeurs"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle_mobile.png">
+						<div class="ovale ovaleVoyeurs"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle_mobile.png">
+						<div class="ovale ovaleVoyeurs"></div>
+					</div>
+				</div>
+			</div>
+			<div class="categorie" id="categorieVoyeurs">ÉDITION</div>
+			<div class="anneeProjet" id="anneeVoyeurs">2019</div>
+			<div class="texteProjet" id="texteVoyeurs">Conception et mise en page de l'édition de l'École Supérieure
+				d'Art et
+				Design •Grenoble •Valence pour la 3e biennale Exemplaires, du 23 mars au 28 avril 2019 à Rennes. Les
+				écoles d'art qui participent à cet évènement ont chacune présenté, à travers une publication et une
+				exposition, une sélection de six ouvrages francophones datant de moins de cinq ans, jugés
+				exemplaires et
+				singuliers par leurs qualités graphiques ou leur propos.<br><br>La sélection des étudiants de l'ÉSAD
+				•Valence pour cette édition 2019, intitulée <i>Voyeurs</i>, s'est attardée sur la question du livre
+				comme dispositif de circulation des images. Qu'elles soient collectées, fragmentées, recomposées, ou
+				même manipulables, que fait le livre aux images&nbsp;? Que font les images au
+				livre&nbsp;?<br><br>L'édition se joue de ces deux questions en obligeant le lecteur à faire un
+				choix&nbsp;: rendre lisible le texte ou l'image. N'étant pas façonnée au préalable, elle se
+				présente
+				comme une affiche et l'imposition des pages au verso rend difficile la lecture du texte. Seule
+				l'image
+				au recto, présentant l'ensemble des ouvrages cités et sélectionnés, est visible dans son
+				intégralité.
+				Pour lire le texte, le lecteur doit découper et façonner l'édition, et donc sacrifier l'image.</div>
+			<div class="caseMoulin">
+				<img class="moulin" src="IMAGES/moulin.png"></img>
+			</div>
+			<div class="boutonInfos" onclick="voletDroit()">INFOS</div> <!-- MOBILE -->
+		</div>
+
+		<div class="sectionDroite" id="sectionDroiteVoyeurs">
+			<div class="gifHaut gifVoyeurs" onclick="clickTohuBohu();switchProjet('tohuBohuLink', 'tohuBohu');">
+				<div class="fileDeCones">
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleVoyeurs"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleVoyeurs"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleVoyeurs"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleVoyeurs"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleVoyeurs"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleVoyeurs"></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="retour" onclick="retour();">RETOUR</div>
+			<div class="categorieMobile" id="categorieMobileVoyeurs">ÉDITION</div>
+			<div class="commanditaire">ÉSAD •GV</div>
+			<div class="ville">VALENCE</div>
+			<div class="anneeMobile">2019</div>
+			<div class="texteProjetMobile" id="texteMobileVoyeurs">Conception et mise en page de l'édition de
+				l'École
+				Supérieure
+				d'Art et
+				Design •Grenoble •Valence pour la 3e biennale Exemplaires, du 23 mars au 28 avril 2019 à Rennes. Les
+				écoles d'art qui participent à cet évènement ont chacune présenté, à travers une publication et une
+				exposition, une sélection de six ouvrages francophones datant de moins de cinq ans, jugés
+				exemplaires et
+				singuliers par leurs qualités graphiques ou leur propos.<br><br>La sélection des étudiants de l'ÉSAD
+				•Valence pour cette édition 2019, intitulée <i>Voyeurs</i>, s'est attardée sur la question du livre
+				comme dispositif de circulation des images. Qu'elles soient collectées, fragmentées, recomposées, ou
+				même manipulables, que fait le livre aux images&nbsp;? Que font les images au
+				livre&nbsp;?<br><br>L'édition se joue de ces deux questions en obligeant le lecteur à faire un
+				choix&nbsp;: rendre lisible le texte ou l'image. N'étant pas façonnée au préalable, elle se
+				présente
+				comme une affiche et l'imposition des pages au verso rend difficile la lecture du texte. Seule
+				l'image
+				au recto, présentant l'ensemble des ouvrages cités et sélectionnés, est visible dans son
+				intégralité.
+				Pour lire le texte, le lecteur doit découper et façonner l'édition, et donc sacrifier l'image.</div>
+			<!-- MOBILE -->
+			<div class="infosProjet" id="infosVoyeurs">Édition dépliée&nbsp;:
+				920&nbsp;×&nbsp;650 mm<br>Édition façonnée&nbsp;: 81&nbsp;×&nbsp;115 mm, 64
+				pages<br>Impression offset<br>600 exemplaires<br><br>En collaboration avec Ariane Corfmat, Solène
+				Lautridou et Céline Renault</div>
+			<div class="gifBas gifVoyeurs" onclick="clickMemoire();switchProjet('memoireLink', 'memoire');">
+				<div class="fileDeCones">
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleVoyeurs"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleVoyeurs"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleVoyeurs"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleVoyeurs"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleVoyeurs"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleVoyeurs"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+
+	<!-- L'AVENTURE DU JEU -->
+
+	<div class="projet" id="memoire">
+
+		<div class="sectionImage" id="imgMemoire"></div>
+		<div class="boutonsSlider">
+			<div class="precedente" onclick="imagePrecedente('premiereImageMemoire')"></div>
+			<div class="suivante" onclick="imageSuivante('premiereImageMemoire', -1400)"></div>
+		</div>
+
+		<div class="sectionBas">
+			<div class="titre" id="titreMemoire">L'aventure du jeu</div>
+			<div class="boutonGaucheMobile boutonMobileMemoire"
+				onclick="clickVoyeurs();switchProjet('voyeursLink', 'voyeurs');">
+				<div class="fileDeConesMobile">
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle_mobile.png">
+						<div class="ovale ovaleMemoire"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle_mobile.png">
+						<div class="ovale ovaleMemoire"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle_mobile.png">
+						<div class="ovale ovaleMemoire"></div>
+					</div>
+				</div>
+			</div>
+			<div class="boutonCentralMobile boutonCentralMobileMemoire" onclick="voletGauche()"> <!-- MOBILE -->
+				<div class="diagonale1"></div>
+				<div class="diagonale2"></div>
+			</div>
+			<div class="boutonDroitMobile boutonMobileMemoire" onclick="clickJpo();switchProjet('jpoLink', 'jpo');">
+				<div class="fileDeConesMobile">
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle_mobile.png">
+						<div class="ovale ovaleMemoire"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle_mobile.png">
+						<div class="ovale ovaleMemoire"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle_mobile.png">
+						<div class="ovale ovaleMemoire"></div>
+					</div>
+				</div>
+			</div>
+			<div class="categorie" id="categorieMemoire">MÉMOIRE DE DNSEP</div>
+			<div class="anneeProjet" id="anneeMemoire">2019</div>
+			<div class="texteProjet" id="texteMemoire">Le jeu pourrait ne pas seulement être une activité marginale
+				à
+				laquelle
+				chacun
+				s'adonne pour son plaisir. Ce mot de trois lettres, qui nous semble évident, et avec lequel nous
+				sommes
+				si familier, cache en réalité une complexité de notions qui s'entremêlent. C'est cette complexité
+				que
+				j'ai tenté de disséquer dans ce mémoire, tout en questionnant l'analogie trop répandue entre jeu et
+				divertissement, pour me poser la question suivante&nbsp;: et si le design graphique pouvait être
+				joué&nbsp;?<br><br>Je tente alors, à la manière d'un «&nbsp;explorateur du jeu&nbsp;», de
+				déceler
+				la jouabilité du design graphique. Comment un designer peut-il jouer sa pratique et en quoi ceci
+				peut-il
+				faire office de méthodologie de travail&nbsp;?</div>
+			<div class="caseMoulin">
+				<img class="moulin" src="IMAGES/moulin.png"></img>
+			</div>
+			<div class="boutonInfos" onclick="voletDroit()">INFOS</div> <!-- MOBILE -->
+		</div>
+
+		<div class="sectionDroite" id="sectionDroiteMemoire">
+			<div class="gifHaut gifMemoire" onclick="clickVoyeurs();switchProjet('voyeursLink', 'voyeurs');">
+				<div class="fileDeCones">
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleMemoire"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleMemoire"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleMemoire"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleMemoire"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleMemoire"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleMemoire"></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="retour" onclick="retour();">RETOUR</div>
+			<div class="categorieMobile" id="categorieMobileMemoire">MÉMOIRE DE DNSEP</div>
+			<div class="commanditaire">ÉSAD •GV</div>
+			<div class="ville">VALENCE</div>
+			<div class="anneeMobile">2019</div>
+			<div class="texteProjetMobile" id="texteMobileMemoire">Le jeu pourrait ne pas seulement être une
+				activité marginale à laquelle
+				chacun s'adonne pour son plaisir. Ce mot de trois lettres, qui nous semble évident, et avec lequel
+				nous
+				sommes si familier, cache en réalité une complexité de notions qui s'entremêlent. C'est cette
+				complexité
+				que j'ai tenté de disséquer dans ce mémoire, tout en questionnant l'analogie trop répandue entre jeu
+				et
+				divertissement, pour me poser la question suivante&nbsp;: et si le design graphique pouvait être
+				joué&nbsp;?<br><br>Je tente alors, à la manière d'un «&nbsp;explorateur du jeu&nbsp;», de
+				déceler la jouabilité du design graphique. Comment un designer peut-il jouer sa pratique et en quoi
+				ceci
+				peut-il faire office de méthodologie de travail&nbsp;?</div> <!-- MOBILE -->
+			<div class="infosProjet" id="infosMemoire">160&nbsp;×&nbsp;230&nbsp;mm, 96
+				pages<br>Impression numérique<br>8 exemplaires<br><br>Disponible à la consultation en format PDF <a
+					class="link" href="DOCS/Julian_Lagoutte_-_L'aventure_du_jeu.pdf" target="_blank">ici</a>.</div>
+			<div class="gifBas gifMemoire" onclick="clickJpo();switchProjet('jpoLink', 'jpo');">
+				<div class="fileDeCones">
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleMemoire"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleMemoire"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleMemoire"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleMemoire"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleMemoire"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleMemoire"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+
+	<!-- PORTES OUVERTES -->
+
+	<div class="projet" id="jpo">
+
+		<div class="sectionImage" id="imgJpo"></div>
+		<div class="boutonsSlider">
+			<div class="precedente" onclick="imagePrecedente('premiereImageJpo')"></div>
+			<div class="suivante" onclick="imageSuivante('premiereImageJpo', -1300)"></div>
+		</div>
+
+		<div class="sectionBas">
+			<div class="titre" id="titreJpo">Portes ouvertes ÉSAD •GV</div>
+			<div class="boutonGaucheMobile boutonMobileJpo"
+				onclick="clickMemoire();switchProjet('memoireLink', 'memoire');">
+				<div class="fileDeConesMobile">
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle_mobile.png">
+						<div class="ovale ovaleJpo"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle_mobile.png">
+						<div class="ovale ovaleJpo"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle_mobile.png">
+						<div class="ovale ovaleJpo"></div>
+					</div>
+				</div>
+			</div>
+			<div class="boutonCentralMobile boutonCentralMobileJpo" onclick="voletGauche()"> <!-- MOBILE -->
+				<div class="diagonale1"></div>
+				<div class="diagonale2"></div>
+			</div>
+			<div class="boutonDroitMobile boutonMobileJpo" onclick="clickLimo();switchProjet('limoLink', 'limo');">
+				<div class="fileDeConesMobile">
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle_mobile.png">
+						<div class="ovale ovaleJpo"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle_mobile.png">
+						<div class="ovale ovaleJpo"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle_mobile.png">
+						<div class="ovale ovaleJpo"></div>
+					</div>
+				</div>
+			</div>
+			<div class="categorie" id="categorieJpo">IDENTITÉ VISUELLE</div>
+			<div class="anneeProjet" id="anneeJpo">2018</div>
+			<div class="texteProjet" id="texteJpo">Communication des journées portes ouvertes 2018 de l'École
+				Supérieure
+				d'Art
+				et Design •Grenoble •Valence, comprenant une série d'affiches, de cartes postales ainsi que la refonte
+				de la page
+				d'accueil du site internet de l'école.</div>
+			<div class="caseMoulin">
+				<img class="moulin" src="IMAGES/moulin.png"></img>
+			</div>
+			<div class="boutonInfos" onclick="voletDroit()">INFOS</div> <!-- MOBILE -->
+		</div>
+
+		<div class="sectionDroite" id="sectionDroiteJpo">
+			<div class="gifHaut gifJpo" onclick="clickMemoire();switchProjet('memoireLink', 'memoire');">
+				<div class="fileDeCones">
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleJpo"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleJpo"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleJpo"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleJpo"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleJpo"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleJpo"></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="retour" onclick="retour();">RETOUR</div>
+			<div class="categorieMobile" id="categorieMobileJpo">IDENTITÉ VISUELLE</div>
+			<div class="commanditaire">ÉSAD •GV</div>
+			<div class="ville">VALENCE</div>
+			<div class="anneeMobile">2018</div>
+			<div class="texteProjetMobile" id="texteMobileJpo">Communication des journées portes ouvertes 2018 de
+				l'École Supérieure
+				d'Art
+				et Design •Grenoble •Valence, comprenant une série d'affiches, de cartes postales ainsi qu'une page
+				d'accueil temporaire du site internet de l'école.</div> <!-- MOBILE -->
+			<div class="infosProjet" id="infosJpo">Affiches A3 et
+				A1<br>Impression risographie (A3) et sérigraphie (A1)<br><br>En collaboration avec Solène Lautridou
+				et
+				Sebastian
+				Schmitt</div>
+			<div class="gifBas gifJpo" onclick="clickLimo();switchProjet('limoLink', 'limo');">
+				<div class="fileDeCones">
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleJpo"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleJpo"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleJpo"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleJpo"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleJpo"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleJpo"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+
+	<!-- LIMO -->
+
+	<div class="projet" id="limo">
+
+		<div class="sectionImage" id="imgLimo"></div>
+		<div class="boutonsSlider">
+			<div class="precedente" onclick="imagePrecedente('premiereImageLimo')"></div>
+			<div class="suivante" onclick="imageSuivante('premiereImageLimo', -1100)"></div>
+		</div>
+
+		<div class="sectionBas">
+			<div class="titre" id="titreLimo">Limo</div>
+			<div class="boutonGaucheMobile boutonMobileLimo" onclick="clickJpo();switchProjet('jpoLink', 'jpo');">
+				<div class="fileDeConesMobile">
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle_mobile.png">
+						<div class="ovale ovaleLimo"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle_mobile.png">
+						<div class="ovale ovaleLimo"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle_mobile.png">
+						<div class="ovale ovaleLimo"></div>
+					</div>
+				</div>
+			</div>
+			<div class="boutonCentralMobile boutonCentralMobileLimo" onclick="voletGauche()"> <!-- MOBILE -->
+				<div class="diagonale1"></div>
+				<div class="diagonale2"></div>
+			</div>
+			<div class="boutonDroitMobile boutonMobileLimo"
+				onclick="clickDisques();switchProjet('disquesLink', 'disques');">
+				<div class="fileDeConesMobile">
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle_mobile.png">
+						<div class="ovale ovaleLimo"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle_mobile.png">
+						<div class="ovale ovaleLimo"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle_mobile.png">
+						<div class="ovale ovaleLimo"></div>
+					</div>
+				</div>
+			</div>
+			<div class="categorie" id="categorieLimo">WEB DESIGN</div>
+			<div class="anneeProjet" id="anneeLimo">2018</div>
+			<div class="texteProjet" id="texteLimo">Conception et développement du site web de Limo, maison
+				d'auto-édition fondée en 2016
+				par Samuel Eckert. Ce site est une plateforme ludique qui propose la consultation des éditions
+				publiées
+				par la maison.</div>
+			<div class="caseMoulin">
+				<img class="moulin" src="IMAGES/moulin.png"></img>
+			</div>
+			<div class="boutonInfos" onclick="voletDroit()">INFOS</div> <!-- MOBILE -->
+		</div>
+
+		<div class="sectionDroite" id="sectionDroiteLimo">
+			<div class="gifHaut gifLimo" onclick="clickJpo();switchProjet('jpoLink', 'jpo');">
+				<div class="fileDeCones">
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleLimo"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleLimo"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleLimo"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleLimo"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleLimo"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleLimo"></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="retour" onclick="retour();">RETOUR</div>
+			<div class="categorieMobile">WEB DESIGN</div>
+			<div class="commanditaire">SAMUEL ECKERT</div>
+			<div class="ville">PARIS</div>
+			<div class="anneeMobile">2018</div>
+			<div class="texteProjetMobile" id="texteMobileLimo">Conception et développement du site web de Limo,
+				maison
+				d'auto-édition fondée en 2016
+				par Samuel Eckert. Ce site est une plateforme ludique qui propose la consultation des éditions
+				publiées
+				par la maison.</div> <!-- MOBILE -->
+			<div class="infosProjet" id="infosLimo">En collaboration avec Samuel Eckert</div>
+			<div class="gifBas gifLimo" onclick="clickDisques();switchProjet('disquesLink', 'disques');">
+				<div class="fileDeCones">
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleLimo"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleLimo"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleLimo"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleLimo"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleLimo"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleLimo"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+
+
+	<!-- LES DISQUES ILLUSTRÉS -->
+
+	<div class="projet" id="disques">
+
+		<div class="sectionImage" id="imgDisques"></div>
+		<div class="boutonsSlider">
+			<div class="precedente" onclick="imagePrecedente('premiereImageDisques')"></div>
+			<div class="suivante" onclick="imageSuivante('premiereImageDisques', -2300)"></div>
+		</div>
+
+		<div class="sectionBas">
+			<div class="titre" id="titreDisques">Les Disques Illustrés</div>
+			<div class="boutonGaucheMobile boutonMobileDisques" onclick="clickLimo();switchProjet('limoLink', 'limo');">
+				<!-- MOBILE -->
+				<div class="fileDeConesMobile">
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle_mobile.png">
+						<div class="ovale ovaleDisques"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle_mobile.png">
+						<div class="ovale ovaleDisques"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle_mobile.png">
+						<div class="ovale ovaleDisques"></div>
+					</div>
+				</div>
+			</div>
+			<div class="boutonCentralMobile boutonCentralMobileDisques" onclick="voletGauche()"> <!-- MOBILE -->
+				<div class="diagonale1"></div>
+				<div class="diagonale2"></div>
+			</div>
+			<a href="https://goutte-a-goutte.tumblr.com/" target="_blank">
+				<div class="boutonDroitMobile boutonMobileDisques"> <!-- MOBILE -->
+					<div class="fileDeConesMobile">
+						<div class="cone">
+							<img class="triangle" src="IMAGES/triangle_mobile.png">
+							<div class="ovale ovaleDisques"></div>
+						</div>
+						<div class="cone">
+							<img class="triangle" src="IMAGES/triangle_mobile.png">
+							<div class="ovale ovaleDisques"></div>
+						</div>
+						<div class="cone">
+							<img class="triangle" src="IMAGES/triangle_mobile.png">
+							<div class="ovale ovaleDisques"></div>
+						</div>
+					</div>
+				</div>
+			</a>
+			<div class="categorie" id="categorieDisques">ÉDITION</div>
+			<div class="anneeProjet" id="anneeDisques">202X</div>
+			<div class="texteProjet" id="texteDisques">Illustrations créées dans un format circulaire et assemblées de
+				manière à pouvoir tourner pour produire une animation, une petite histoire ou un jeu graphique, à la
+				manière des pop-up. Cette série d'objets forme le projet Les Disques Illustrés, qui s'inspire de
+				systèmes
+				de disques
+				en papier, appelés <i>volvelles</i>, à l'origine utilisés dans les livres d'astronomie.
+			</div>
+			<div class="caseMoulin">
+				<img class="moulin" src="IMAGES/moulin.png"></img>
+			</div>
+			<div class="boutonInfos" onclick="voletDroit()">INFOS</div> <!-- MOBILE -->
+		</div>
+
+		<div class="sectionDroite" id="sectionDroiteDisques">
+			<div class="gifHaut gifDisques" onclick="clickLimo();switchProjet('limoLink', 'limo');">
+				<div class="fileDeCones">
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleDisques"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleDisques"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleDisques"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleDisques"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleDisques"></div>
+					</div>
+					<div class="cone">
+						<img class="triangle" src="IMAGES/triangle.png">
+						<div class="ovale ovaleDisques"></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="retour" onclick="retour();">RETOUR</div>
+			<div class="categorieMobile" id="categorieMobileDisques">ÉDITION</div>
+			<div class="commanditaire" id="commanditaireDisques">PROJET PERSONNEL</div>
+			<div class="ville">DIJON</div>
+			<div class="anneeMobile">2024</div>
+			<div class="texteProjetMobile" id="texteMobileDisques">Illustrations créées dans un format circulaire et
+				assemblées de
+				manière à pouvoir tourner pour produire une animation, une petite histoire ou un jeu graphique, à la
+				manière des pop-up. Cette série d'objets forme le projet Les Disques Illustrés, qui s'inspire de
+				systèmes
+				de disques
+				en papier, appelés <i>volvelles</i>, à l'origine utilisés dans les livres d'astronomie.</div>
+			<!-- MOBILE -->
+			<div class="infosProjet" id="infosDisques">Site internet dédié au projet
+				ici&nbsp;:<br><a class="link" href="https://les-disques-illustres.fr/index.html"
+					target="_blank">www.les-disques-illustres.fr</a></div>
+			<a href="https://goutte-a-goutte.tumblr.com/" target="_blank">
+				<div class="gifBas gifDisques">
+					<div class="fileDeCones">
+						<div class="cone">
+							<img class="triangle" src="IMAGES/triangle.png">
+							<div class="ovale ovaleDisques"></div>
+						</div>
+						<div class="cone">
+							<img class="triangle" src="IMAGES/triangle.png">
+							<div class="ovale ovaleDisques"></div>
+						</div>
+						<div class="cone">
+							<img class="triangle" src="IMAGES/triangle.png">
+							<div class="ovale ovaleDisques"></div>
+						</div>
+						<div class="cone">
+							<img class="triangle" src="IMAGES/triangle.png">
+							<div class="ovale ovaleDisques"></div>
+						</div>
+						<div class="cone">
+							<img class="triangle" src="IMAGES/triangle.png">
+							<div class="ovale ovaleDisques"></div>
+						</div>
+						<div class="cone">
+							<img class="triangle" src="IMAGES/triangle.png">
+							<div class="ovale ovaleDisques"></div>
+						</div>
+					</div>
+				</div>
+			</a>
+		</div>
+
+	</div>
+
+
+
+	<script>
+
+		// ecran d'intro
+
+		window.addEventListener("load", setup);
+
+		function setup() {
+
+			// couleur aléatoire
+
+			var couleur = Array("#3AA176", "#ffabe4", "#EEDDFF", "#4290ef", "#E6FA72", "#F2633D");
+
+			var casesIntro = document.getElementsByClassName("caseIntro");
+			var ovalesAccueil = document.getElementsByClassName("ovaleAccueil");
+			var boutonsAbout = document.getElementsByClassName("boutonMobileAbout");
+			var ovalesAbout = document.getElementsByClassName("ovaleAbout");
+			var ovalesBoutique = document.getElementsByClassName("ovaleBoutique");
+			var o;
+
+			var couleurRandom = couleur[Math.floor(Math.random() * couleur.length)];
+			document.getElementById('introMobile').style.background = couleurRandom;
+			document.getElementById('accueil').style.background = couleurRandom;
+			document.getElementById('about').style.background = couleurRandom;
+			document.getElementById('sectionBasAbout').style.background = couleurRandom;
+			document.getElementById('boutique').style.background = couleurRandom;
+			document.getElementById('sectionDroiteBoutique').style.background = couleurRandom;
+			document.getElementById('textesBoutiqueMobile').style.background = couleurRandom;
+
+			// animation goutte
+
+			for (o = 0; o < casesIntro.length; o++) {
+				casesIntro[o].style.background = couleurRandom;
+			}
+			for (o = 0; o < ovalesAccueil.length; o++) {
+				ovalesAccueil[o].style.background = couleurRandom;
+			}
+			for (o = 0; o < ovalesAbout.length; o++) {
+				ovalesAbout[o].style.background = couleurRandom;
+			}
+			for (o = 0; o < ovalesBoutique.length; o++) {
+				ovalesBoutique[o].style.background = couleurRandom;
+			}
+			for (o = 0; o < boutonsAbout.length; o++) {
+				boutonsAbout[o].style.background = couleurRandom;
+			}
+
+			var goutte = document.getElementById("goutteIntro");
+			var goutteMobile = document.getElementById("goutteIntroMobile");
+			var goutteEntete = document.getElementById("goutte");
+			var imagesIntro = document.getElementsByClassName("imgIntro");
+			var i;
+
+			function goutteQuiPerle() {
+				goutte.style.height = 2.5 + 'vw';
+				goutte.style.marginLeft = -0.7 + 'vw';
+				goutteMobile.style.height = 10 + 'vw';
+				goutteMobile.style.marginLeft = -3.1 + 'vw';
+			};
+
+			setTimeout(goutteQuiPerle, 200);
+
+			function chuteGoutte1() {
+				goutte.style.top = 'calc(' + 100 + '%' + ' + ' + 2.5 + 'vw)';
+				goutteMobile.style.top = 'calc(' + 100 + '%' + ' + ' + 2.5 + 'vw)';
+				retour();
+			};
+
+			setTimeout(chuteGoutte1, 600);
+
+			function devoilerCase1() {
+				document.getElementById("gifBasIntro").style.background = "transparent";
+				document.getElementById("imgAccueil7").style.opacity = 1;
+				document.getElementById("imgAccueil8").style.opacity = 1;
+				document.getElementById("imgAccueilMobile2").style.opacity = 1;
+			};
+
+			setTimeout(devoilerCase1, 2200);
+
+			function devoilerCase2() {
+				document.getElementById("nomIntro").style.background = "transparent";
+				document.getElementById("enteteIntro").style.background = "transparent";
+				document.getElementById("moulinMobile").style.opacity = 1;
+			};
+
+			setTimeout(devoilerCase2, 2400);
+
+			function devoilerCase3() {
+				document.getElementById("texteIntro").style.background = "transparent";
+				document.getElementById("imgAccueil1").style.opacity = 1;
+				document.getElementById("imgAccueil2").style.opacity = 1;
+				document.getElementById("petitMoulinMobile").style.opacity = 1;
+			};
+
+			setTimeout(devoilerCase3, 2600);
+
+			function devoilerCase4() {
+				document.getElementById("imgIntro").style.background = "transparent";
+				document.getElementById("imgAccueil9").style.opacity = 1;
+				document.getElementById("imgAccueil10").style.opacity = 1;
+				document.getElementById("imgAccueilMobile3").style.opacity = 1;
+			};
+
+			setTimeout(devoilerCase4, 2800);
+
+			function devoilerCase5() {
+				document.getElementById("infosIntro").style.background = "transparent";
+				document.getElementById("imgAccueil5").style.opacity = 1;
+				document.getElementById("imgAccueil6").style.opacity = 1;
+				document.getElementById("imgAccueilMobile1").style.opacity = 1;
+			};
+
+			setTimeout(devoilerCase5, 3000);
+
+			function devoilerCase6() {
+				document.getElementById("moulinIntro").style.background = "transparent";
+			};
+
+			setTimeout(devoilerCase6, 3200);
+
+			function devoilerCase7() {
+				document.getElementById("listeIntro").style.background = "transparent";
+			};
+
+			setTimeout(devoilerCase7, 3400);
+
+			function devoilerCase8() {
+				document.getElementById("gifHautIntro").style.background = "transparent";
+				document.getElementById("imgAccueil3").style.opacity = 1;
+				document.getElementById("imgAccueil4").style.opacity = 1;
+			};
+
+			setTimeout(devoilerCase8, 3600);
+
+			function devoilerPage() {
+				document.getElementById("ecranIntro").style.opacity = 0;
+				diapoMobile();
+			};
+
+			setTimeout(devoilerPage, 3800);
+
+			function effacerIntro() {
+				document.getElementById("ecranIntro").style.display = 'none';
+				goutteEntete.style.top = .8 + 'vw';
+			};
+
+			setTimeout(effacerIntro, 4400);
+
+		}
+
+		//switch images intro
+
+		function imageSwitch(x) {
+
+			var zut = document.getElementById(x);
+			var op = window.getComputedStyle(zut).getPropertyValue("opacity");
+
+			if (op == 1) {
+				document.getElementById(x).style.opacity = 0;
+			}
+			if (op == 0) {
+				document.getElementById(x).style.opacity = 1;
+			}
+		}
+
+		//switch images intro mobile
+
+		function diapoMobile() {
+
+			function changementCase1() {
+				document.getElementById("imgAccueilMobile2").src = "IMAGES/PROJETS/BOURBON/02.jpg";
+			}
+
+			setTimeout(changementCase1, 0);
+
+			function changementCase2() {
+				document.getElementById("imgAccueilMobile3").src = "IMAGES/PROJETS/ASTRONOMES/00.jpg";
+			}
+
+			setTimeout(changementCase2, 1000);
+
+			function changementCase3() {
+				document.getElementById("imgAccueilMobile1").src = "IMAGES/PROJETS/ORAGE/00.jpg";
+			}
+
+			setTimeout(changementCase3, 2000);
+
+			function changementCase4() {
+				document.getElementById("imgAccueilMobile2").src = "IMAGES/PROJETS/JEUX/06.jpg";
+			}
+
+			setTimeout(changementCase4, 3000);
+
+			function changementCase5() {
+				document.getElementById("imgAccueilMobile1").src = "IMAGES/PROJETS/SUNFLOWER/01.jpg";
+			}
+
+			setTimeout(changementCase5, 4000);
+
+			function changementCase6() {
+				document.getElementById("imgAccueilMobile3").src = "IMAGES/PROJETS/JPO/12.jpg";
+			}
+
+			setTimeout(changementCase6, 5000);
+
+			function changementCase7() {
+				document.getElementById("imgAccueilMobile1").src = "IMAGES/PROJETS/DISQUES_ILLUSTRES/02.jpg";
+			}
+
+			setTimeout(changementCase7, 6000);
+
+			function changementCase8() {
+				document.getElementById("imgAccueilMobile2").src = "IMAGES/PROJETS/VOEUX/02.jpg";
+			}
+
+			setTimeout(changementCase8, 7000);
+
+			function changementCase9() {
+				document.getElementById("imgAccueilMobile3").src = "IMAGES/PROJETS/VAPEUR/01.jpg";
+			}
+
+			setTimeout(changementCase9, 8000);
+
+			function boucle() {
+				diapoMobile();
+			}
+
+			setTimeout(boucle, 9000);
+
+		}
+
+
+		//goutte
+
+		document.getElementById("nom").addEventListener("mouseover", function () {
+			document.getElementById("julianLa").innerHTML = "Julian Lagoutte";
+			document.getElementById("goutte").style.opacity = 0;
+		});
+		document.getElementById("nom").addEventListener("mouseout", function () {
+			document.getElementById("julianLa").innerHTML = "Julian La";
+			document.getElementById("goutte").style.opacity = 1;
+		});
+
+		// goutte scroll
+
+		function scrollGoutte() {
+			var scrollHeight = document.getElementById("liste").scrollHeight - document.getElementById("liste").clientHeight;
+			var scrollTop = document.getElementById("liste").scrollTop;
+			var scrollPercent = (scrollTop / scrollHeight) * 100;
+			document.getElementById("goutteScroll").style.top = scrollPercent + "%";
+		}
+
+		//plein ecran
+
+		var countFull = 0
+		var sectionImage = document.getElementsByClassName("sectionImage");
+		var sectionBas = document.getElementsByClassName("sectionBas");
+		var sectionDroite = document.getElementsByClassName("sectionDroite");
+		var boutonsSlider = document.getElementsByClassName("boutonsSlider");
+		var j;
+
+		function fullScreen() {
+			if (countFull == 0) {
+				fullScreenOn();
+			}
+			else if (countFull == 1) {
+				fullScreenOff();
+			}
+		}
+
+		function fullScreenOn() {
+
+			colonneDroite = 20;
+
+			for (j = 0; j < sectionImage.length; j++) {
+				sectionImage[j].style.width = 80 + "vw";
+				sectionImage[j].style.height = 100 + "vh";
+			}
+
+			for (j = 0; j < sectionDroite.length; j++) {
+				sectionDroite[j].style.right = -20 + "vw";
+			}
+
+			for (j = 0; j < sectionBas.length; j++) {
+				sectionBas[j].style.top = 100 + "vh";
+				sectionBas[j].style.width = 80 + "vw";
+			}
+
+			for (j = 0; j < boutonsSlider.length; j++) {
+				boutonsSlider[j].style.width = 80 + "vw";
+				boutonsSlider[j].style.height = 100 + "vh";
+			}
+
+			document.getElementById("imgAbout").style.width = 80 + "vw";
+			document.getElementById("imgAbout").style.height = 100 + "vh";
+
+			countFull = 1;
+		}
+
+		function fullScreenOff() {
+
+			colonneDroite = 0;
+
+			for (j = 0; j < sectionImage.length; j++) {
+				sectionImage[j].style.width = 60 + "vw";
+				sectionImage[j].style.height = 76 + "vh";
+			}
+
+			for (j = 0; j < sectionDroite.length; j++) {
+				sectionDroite[j].style.right = 0 + "vw";
+			}
+
+			for (j = 0; j < sectionBas.length; j++) {
+				sectionBas[j].style.top = 76 + "vh";
+				sectionBas[j].style.width = 60 + "vw";
+			}
+			for (j = 0; j < boutonsSlider.length; j++) {
+				boutonsSlider[j].style.width = 60 + "vw";
+				boutonsSlider[j].style.height = 76 + "vh";
+			}
+
+			document.getElementById("imgAbout").style.width = 60 + "vw";
+			document.getElementById("imgAbout").style.height = 76 + "vh";
+
+			countFull = 0;
+		}
+
+
+		// empecher scroll des fleches
+
+		var gif = document.getElementsByClassName("gifHaut");
+		var gif2 = document.getElementsByClassName("gifBas");
+		var gif3 = document.getElementsByClassName("boutonDroitMobile");
+		var gif4 = document.getElementsByClassName("boutonGaucheMobile");
+		var k;
+
+		for (k = 0; k < gif.length; k++) {
+			gif[k].addEventListener('wheel', preventScroll, { passive: false });
+		}
+		for (k = 0; k < gif2.length; k++) {
+			gif2[k].addEventListener('wheel', preventScroll, { passive: false });
+		}
+		for (k = 0; k < gif3.length; k++) {
+			gif3[k].addEventListener('wheel', preventScroll, { passive: false });
+		}
+		for (k = 0; k < gif4.length; k++) {
+			gif4[k].addEventListener('wheel', preventScroll, { passive: false });
+		}
+
+		document.getElementById("fullscreen").addEventListener('wheel', preventScroll, { passive: false });
+
+		function preventScroll(e) {
+			e.preventDefault();
+			e.stopPropagation();
+
+			return false;
+		}
+
+
+		// slider images projets
+
+		var posSlider = 0;
+
+		function imagePrecedente(premiereImage) {
+			posSlider = posSlider + 100;
+			if (posSlider >= 0) {
+				posSlider = 0;
+			}
+			document.getElementById(premiereImage).style.marginLeft = posSlider + "%";
+			console.log(posSlider, "slider");
+		}
+		function imageSuivante(premiereImage, posSliderMax) {
+			posSlider = posSlider - 100;
+			if (posSlider <= posSliderMax) {
+				posSlider = posSliderMax;
+			}
+			document.getElementById(premiereImage).style.marginLeft = posSlider + "%";
+			console.log(posSlider, "slider");
+		}
+
+		// slider textes about
+
+		var cv;
+
+		function texteSuivant() {
+			cv = cv + 1;
+			if (cv == 5) {
+				cv = 1;
+			}
+			if (cv == 1) {
+				document.getElementById("cv1").style.display = "block";
+				document.getElementById("cv2").style.display = "none";
+				document.getElementById("cv3").style.display = "none";
+				document.getElementById("cv4").style.display = "none";
+			}
+			if (cv == 2) {
+				document.getElementById("cv1").style.display = "none";
+				document.getElementById("cv2").style.display = "block";
+				document.getElementById("cv3").style.display = "none";
+				document.getElementById("cv4").style.display = "none";
+			}
+			if (cv == 3) {
+				document.getElementById("cv1").style.display = "none";
+				document.getElementById("cv2").style.display = "none";
+				document.getElementById("cv3").style.display = "block";
+				document.getElementById("cv4").style.display = "none";
+			}
+			if (cv == 4) {
+				document.getElementById("cv1").style.display = "none";
+				document.getElementById("cv2").style.display = "none";
+				document.getElementById("cv3").style.display = "none";
+				document.getElementById("cv4").style.display = "block";
+			}
+			if (cv >= 6) {
+				document.getElementById("cv1").style.display = "block";
+				document.getElementById("cv2").style.display = "block";
+				document.getElementById("cv3").style.display = "block";
+				document.getElementById("cv4").style.display = "block";
+			}
+			console.log(cv, "cv")
+		}
+
+		// slider articles boutique
+
+		function articlePrecedent(premiereImage) {
+			posSlider = posSlider + 100;
+			if (posSlider >= 0) {
+				posSlider = 0;
+			}
+			document.getElementById(premiereImage).style.marginLeft = posSlider + "%";
+			infosArticles();
+		}
+		function articleSuivant(premiereImage, posSliderMax) {
+			posSlider = posSlider - 100;
+			if (posSlider <= posSliderMax) {
+				posSlider = posSliderMax;
+			}
+			document.getElementById(premiereImage).style.marginLeft = posSlider + "%";
+			infosArticles();
+		}
+		function infosArticles() {
+			if (posSlider == 0) {
+				document.getElementById("titreBoutique").innerHTML = "Trous";
+				document.getElementById("anneeBoutique").innerHTML = "15&nbsp;€";
+				document.getElementById("texteBoutique").innerHTML = "Risographie A4, 4 couleurs, sur papier Munken Rough 240gr.<br>Limité à 30 exemplaires numérotés et signés.";
+				document.getElementById("texteBoutiqueAnglais").innerHTML = "A4 risograph print, 4 colours, on 240g Munken Rough paper.<br>Limited edition of 30 signed and numbered copies.";
+				document.getElementById("dimensions").innerHTML = "21&nbsp;×&nbsp;29,7 CM";
+				document.getElementById("couleurs").innerHTML = "4 COULEURS";
+				document.getElementById("couleursAnglais").innerHTML = "4 COLOURS";
+			}
+			if (posSlider == -100) {
+				document.getElementById("titreBoutique").innerHTML = "L'arrivée de la comète";
+				document.getElementById("anneeBoutique").innerHTML = "9&nbsp;€";
+				document.getElementById("texteBoutique").innerHTML = "Risographie A5, 4 couleurs, sur papier Munken Rough 240gr.<br>Limité à 30 exemplaires numérotés et signés.";
+				document.getElementById("texteBoutiqueAnglais").innerHTML = "A5 risograph print, 4 colours, on 240g Munken Rough paper.<br>Limited edition of 30 signed and numbered copies.";
+				document.getElementById("dimensions").innerHTML = "10,5&nbsp;×&nbsp;14,8 CM";
+				document.getElementById("couleurs").innerHTML = "4 COULEURS";
+				document.getElementById("couleursAnglais").innerHTML = "4 COLOURS";
+			}
+			if (posSlider == -200) {
+				document.getElementById("titreBoutique").innerHTML = "Sac de noeuds";
+				document.getElementById("anneeBoutique").innerHTML = "9&nbsp;€";
+				document.getElementById("texteBoutique").innerHTML = "Risographie A3, 2 couleurs, sur papier Munken Rough 240gr.<br>Limité à 30 exemplaires numérotés et signés.";
+				document.getElementById("texteBoutiqueAnglais").innerHTML = "A3 risograph print, 2 colours, on 240g Munken Rough paper.<br>Limited edition of 30 signed and numbered copies.";
+				document.getElementById("dimensions").innerHTML = "10,5&nbsp;×&nbsp;14,8 CM";
+				document.getElementById("couleurs").innerHTML = "2 COULEURS";
+				document.getElementById("couleursAnglais").innerHTML = "2 COLOURS";
+			}
+			if (posSlider == -300) {
+				document.getElementById("titreBoutique").innerHTML = "Minigolf damier";
+				document.getElementById("anneeBoutique").innerHTML = "15&nbsp;€";
+				document.getElementById("texteBoutique").innerHTML = "Risographie A4, 3 couleurs, sur papier Munken Rough 240gr.<br>Limité à 20 exemplaires numérotés et signés.";
+				document.getElementById("texteBoutiqueAnglais").innerHTML = "A4 risograph print, 3 colours, on 240g Munken Rough paper.<br>Limited edition of 20 signed and numbered copies.";
+				document.getElementById("dimensions").innerHTML = "21&nbsp;×&nbsp;29,7 CM";
+				document.getElementById("couleurs").innerHTML = "3 COULEURS";
+				document.getElementById("couleursAnglais").innerHTML = "3 COLOURS";
+			}
+			if (posSlider == -400) {
+				document.getElementById("titreBoutique").innerHTML = "Minigolf sphérique";
+				document.getElementById("anneeBoutique").innerHTML = "12&nbsp;€";
+				document.getElementById("texteBoutique").innerHTML = "Risographie 21&nbsp;×&nbsp;21 cm, 3 couleurs, sur papier Munken Rough 240gr.<br>Limité à 20 exemplaires numérotés et signés.";
+				document.getElementById("texteBoutiqueAnglais").innerHTML = "21&nbsp;×&nbsp;21 cm risograph print, 3 colours, on 240g Munken Rough paper.<br>Limited edition of 20 signed and numbered copies.";
+				document.getElementById("dimensions").innerHTML = "21&nbsp;×&nbsp;21 CM";
+				document.getElementById("couleurs").innerHTML = "3 COULEURS";
+				document.getElementById("couleursAnglais").innerHTML = "3 COLOURS";
+			}
+			if (posSlider == -500) {
+				document.getElementById("titreBoutique").innerHTML = "Minigolf spirale";
+				document.getElementById("anneeBoutique").innerHTML = "5&nbsp;€";
+				document.getElementById("texteBoutique").innerHTML = "Risographie format marque-page (8,7&nbsp;×&nbsp;21 cm), 3 couleurs, sur papier Munken Rough 240gr.<br>Limité à 20 exemplaires numérotés et signés.";
+				document.getElementById("texteBoutiqueAnglais").innerHTML = "8,7&nbsp;×&nbsp;21 cm risograph print, 3 colours, on 240g Munken Rough paper.<br>Limited edition of 20 signed and numbered copies.";
+				document.getElementById("dimensions").innerHTML = "8,7&nbsp;×&nbsp;21 CM";
+				document.getElementById("couleurs").innerHTML = "3 COULEURS";
+				document.getElementById("couleursAnglais").innerHTML = "3 COLOURS";
+			}
+			if (posSlider == -600) {
+				document.getElementById("titreBoutique").innerHTML = "Comète zigzagante";
+				document.getElementById("anneeBoutique").innerHTML = "25&nbsp;€";
+				document.getElementById("texteBoutique").innerHTML = "Risographie A3, 3 couleurs, sur papier Munken Polar 240gr.<br>Limité à 10 exemplaires numérotés et signés.";
+				document.getElementById("texteBoutiqueAnglais").innerHTML = "A3 risograph print, 3 colours, on 240g Munken Polar paper.<br>Limited edition of 10 signed and numbered copies.";
+				document.getElementById("dimensions").innerHTML = "29,7&nbsp;×&nbsp;42 CM";
+				document.getElementById("couleurs").innerHTML = "3 COULEURS";
+				document.getElementById("couleursAnglais").innerHTML = "3 COLOURS";
+			}
+			if (posSlider == -700) {
+				document.getElementById("titreBoutique").innerHTML = "Lévitation";
+				document.getElementById("anneeBoutique").innerHTML = "18&nbsp;€";
+				document.getElementById("texteBoutique").innerHTML = "Risographie 29,7&nbsp;×&nbsp;29,7 cm, 2 couleurs, sur papier Munken Polar 240gr.<br>Limité à 15 exemplaires numérotés et signés.";
+				document.getElementById("texteBoutiqueAnglais").innerHTML = "29,7&nbsp;×&nbsp;29,7 cm risograph print, 2 colours, on 240g Munken Polar paper.<br>Limited edition of 15 signed and numbered copies.";
+				document.getElementById("dimensions").innerHTML = "29,7&nbsp;×&nbsp;29,7 CM";
+				document.getElementById("couleurs").innerHTML = "2 COULEURS";
+				document.getElementById("couleursAnglais").innerHTML = "2 COLOURS";
+			}
+			if (posSlider == -800) {
+				document.getElementById("titreBoutique").innerHTML = "La maison sur le nuage";
+				document.getElementById("anneeBoutique").innerHTML = "4&nbsp;€";
+				document.getElementById("texteBoutique").innerHTML = "Carte postale risographiée, 2 couleurs, sur papier Munken Polar 240gr.<br>Limité à 16 exemplaires.";
+				document.getElementById("texteBoutiqueAnglais").innerHTML = "Risograph printed postcard, 2 colours, on 240g Munken Polar paper.<br>Limited edition of 16 copies.";
+				document.getElementById("dimensions").innerHTML = "10,5&nbsp;×&nbsp;14,8 CM";
+				document.getElementById("couleurs").innerHTML = "2 COULEURS";
+				document.getElementById("couleursAnglais").innerHTML = "2 COLOURS";
+			}
+			if (posSlider == -900) {
+				document.getElementById("titreBoutique").innerHTML = "Minigolf habité";
+				document.getElementById("anneeBoutique").innerHTML = "9&nbsp;€";
+				document.getElementById("texteBoutique").innerHTML = "Risographie A5, 3 couleurs, sur papier Munken Polar 240gr.<br>Limité à 7 exemplaires numérotés et signés.";
+				document.getElementById("texteBoutiqueAnglais").innerHTML = "A5 risograph print, 3 colours, on 240g Munken Polar paper.<br>Limited edition of 7 signed and numbered copies.";
+				document.getElementById("dimensions").innerHTML = "14,8&nbsp;×&nbsp;21 CM";
+				document.getElementById("couleurs").innerHTML = "3 COULEURS";
+				document.getElementById("couleursAnglais").innerHTML = "3 COLOURS";
+			}
+			if (posSlider == -1000) {
+				document.getElementById("titreBoutique").innerHTML = "Minigolf cône";
+				document.getElementById("anneeBoutique").innerHTML = "4&nbsp;€";
+				document.getElementById("texteBoutique").innerHTML = "Carte postale risographiée, 3 couleurs, sur papier Munken Polar 240gr.<br>Limité à 12 exemplaires numérotés et signés.";
+				document.getElementById("texteBoutiqueAnglais").innerHTML = "Risograph printed postcard, 3 colours, on 240g Munken Polar paper.<br>Limited edition of 12 signed and numbered copies.";
+				document.getElementById("dimensions").innerHTML = "10,5&nbsp;×&nbsp;14,8 CM";
+				document.getElementById("couleurs").innerHTML = "3 COULEURS";
+				document.getElementById("couleursAnglais").innerHTML = "3 COLOURS";
+			}
+			if (posSlider == -1100) {
+				document.getElementById("titreBoutique").innerHTML = "Sans dessus dessous";
+				document.getElementById("anneeBoutique").innerHTML = "9&nbsp;€";
+				document.getElementById("texteBoutique").innerHTML = "Risographie A5, 2 couleurs, sur papier Munken Pure 240gr.<br>Limité à 15 exemplaires numérotés et signés.";
+				document.getElementById("texteBoutiqueAnglais").innerHTML = "A5 risograph print, 2 colours, on 240g Munken Pure paper.<br>Limited edition of 15 signed and numbered copies.";
+				document.getElementById("dimensions").innerHTML = "14,8&nbsp;×&nbsp;21 CM";
+				document.getElementById("couleurs").innerHTML = "2 COULEURS";
+				document.getElementById("couleursAnglais").innerHTML = "2 COLOURS";
+			}
+			if (posSlider == -1200) {
+				document.getElementById("titreBoutique").innerHTML = "Montagne énervée";
+				document.getElementById("anneeBoutique").innerHTML = "25&nbsp;€";
+				document.getElementById("texteBoutique").innerHTML = "Risographie A3, 4 couleurs, sur papier Munken Rough Pure 240gr.<br>Limité à 20 exemplaires numérotés et signés.<br>Illustration 1/2 d'une collaboration avec Félix Pommier.";
+				document.getElementById("texteBoutiqueAnglais").innerHTML = "A3 risograph print, 4 colours, on 240g Munken Rough Pure paper.<br>Limited edition of 20 signed and numbered copies.<br>Illustration 1/2 from a collaboration with Félix Pommier.";
+				document.getElementById("dimensions").innerHTML = "42&nbsp;×&nbsp;29,7 CM";
+				document.getElementById("couleurs").innerHTML = "4 COULEURS";
+				document.getElementById("couleursAnglais").innerHTML = "4 COLOURS";
+			}
+			if (posSlider == -1300) {
+				document.getElementById("titreBoutique").innerHTML = "Horizon galbé";
+				document.getElementById("anneeBoutique").innerHTML = "25&nbsp;€";
+				document.getElementById("texteBoutique").innerHTML = "Risographie A3, 4 couleurs, sur papier Munken Rough Pure 240gr.<br>Limité à 20 exemplaires numérotés et signés.<br>Illustration 2/2 d'une collaboration avec Félix Pommier.";
+				document.getElementById("texteBoutiqueAnglais").innerHTML = "A3 risograph print, 4 colours, on 240g Munken Rough Pure paper.<br>Limited edition of 20 signed and numbered copies.<br>Illustration 1/2 from a collaboration with Félix Pommier.";
+				document.getElementById("dimensions").innerHTML = "42&nbsp;×&nbsp;29,7 CM";
+				document.getElementById("couleurs").innerHTML = "4 COULEURS";
+				document.getElementById("couleursAnglais").innerHTML = "4 COLOURS";
+			}
+			if (posSlider == -1400) {
+				document.getElementById("titreBoutique").innerHTML = "Les astronomes";
+				document.getElementById("anneeBoutique").innerHTML = "15&nbsp;€";
+				document.getElementById("texteBoutique").innerHTML = "Bande dessinée rotative, Les Éditions du Tache Papier, mars 2022.<br>Risographie 1 couleur sur papier Munken Polar 240gr. Autocollant de la pochette imprimé en sérigraphie.<br>Seconde édition (septembre 2023), 60 exemplaires numérotés.";
+				document.getElementById("texteBoutiqueAnglais").innerHTML = "Rotative comic, Les Éditions du Tache Papier, March 2022.<br>1 colour risograph print on 240g Munken Polar paper. The sticker on the sleeve is silkscreen printed.<br>Second edition (September 2023), 60 numbered copies.";
+				document.getElementById("dimensions").innerHTML = "32&nbsp;×&nbsp;32 CM";
+				document.getElementById("couleurs").innerHTML = "1 COULEUR";
+				document.getElementById("couleursAnglais").innerHTML = "1 COLOUR";
+			}
+			if (posSlider == -1500) {
+				document.getElementById("titreBoutique").innerHTML = "Ascension glissante";
+				document.getElementById("anneeBoutique").innerHTML = "25&nbsp;€";
+				document.getElementById("texteBoutique").innerHTML = "Risographie A3, 2 couleurs, sur papier Fedrigoni Arena 200gr.<br>Limité à 15 exemplaires numérotés et signés.";
+				document.getElementById("texteBoutiqueAnglais").innerHTML = "A3 risograph print, 2 colours, on 200g Fedrigoni Arena paper.<br>Limited edition of 15 signed and numbered copies.";
+				document.getElementById("dimensions").innerHTML = "29,7&nbsp;×&nbsp;42 CM";
+				document.getElementById("couleurs").innerHTML = "2 COULEURS";
+				document.getElementById("couleursAnglais").innerHTML = "2 COLOURS";
+			}
+			if (posSlider == -1600) {
+				document.getElementById("titreBoutique").innerHTML = "Colline";
+				document.getElementById("anneeBoutique").innerHTML = "15&nbsp;€";
+				document.getElementById("texteBoutique").innerHTML = "Risographie A4, 3 couleurs, sur papier Munken Cream 240gr.<br>Limité à 13 exemplaires numérotés et signés.";
+				document.getElementById("texteBoutiqueAnglais").innerHTML = "A4 risograph print, 3 colours, on 240g Munken Cream paper.<br>Limited edition of 13 signed and numbered copies.";
+				document.getElementById("dimensions").innerHTML = "21&nbsp;×&nbsp;29,7 CM";
+				document.getElementById("couleurs").innerHTML = "3 COULEURS";
+				document.getElementById("couleursAnglais").innerHTML = "3 COLOURS";
+			}
+			if (posSlider == -1700) {
+				document.getElementById("titreBoutique").innerHTML = "La chute";
+				document.getElementById("anneeBoutique").innerHTML = "9&nbsp;€";
+				document.getElementById("texteBoutique").innerHTML = "Risographie A5, 1 couleur, sur papier Munken Cream 240gr.<br>Limité à 15 exemplaires numérotés et signés.";
+				document.getElementById("texteBoutiqueAnglais").innerHTML = "A5 risograph print, 1 colour, on 240g Munken Cream paper.<br>Limited edition of 15 signed and numbered copies.";
+				document.getElementById("dimensions").innerHTML = "14,8&nbsp;×&nbsp;21 CM";
+				document.getElementById("couleurs").innerHTML = "1 COULEUR";
+				document.getElementById("couleursAnglais").innerHTML = "1 COLOUR";
+			}
+		}
+
+	</script>
+
+	<script src="SCRIPT/script_projets.js"></script>
+	<script src="SCRIPT/script_mobile.js"></script>
+	<script src="SCRIPT/script_langue.js"></script>
+
+</body>
+
+</html>
